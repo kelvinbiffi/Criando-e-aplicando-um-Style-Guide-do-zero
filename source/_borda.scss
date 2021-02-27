@@ -1,0 +1,16 @@
+.borda {
+  border: 2px solid $cor-preto;
+  &--leve {
+    border-width: 1px;
+  }
+  &--forte {
+    border-width: 3px;
+  }
+}
+
+/*GUIDE
+Base|Borda
+<div class="holder borda">sombra</div>
+<div class="holder borda borda--leve">borda borda--leve</div>
+<div class="holder borda borda--forte">borda borda--forte</div>
+*/

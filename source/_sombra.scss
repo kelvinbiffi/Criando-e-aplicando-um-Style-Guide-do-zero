@@ -1,0 +1,16 @@
+.sombra {
+  box-shadow: 0px 6px 10px 2px rgba($cor-preto, 0.4);
+  &--leve {
+    box-shadow: 0px 6px 10px 2px rgba($cor-preto, 0.2);
+  }
+  &--forte {
+    box-shadow: 0px 6px 10px 2px rgba($cor-preto, 0.6);
+  }
+}
+
+/*GUIDE
+Base|Sombra
+<div class="holder sombra">sombra</div>
+<div class="holder sombra sombra--leve">sombra sombra--leve</div>
+<div class="holder sombra sombra--forte">sombra sombra--forte</div>
+*/

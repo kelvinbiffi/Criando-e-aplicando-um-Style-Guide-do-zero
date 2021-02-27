@@ -269,6 +269,38 @@ Base|Grid
   </div>
 </div>
 */
+.sombra {
+  box-shadow: 0px 6px 10px 2px rgba(51, 51, 51, 0.4);
+}
+.sombra--leve {
+  box-shadow: 0px 6px 10px 2px rgba(51, 51, 51, 0.2);
+}
+.sombra--forte {
+  box-shadow: 0px 6px 10px 2px rgba(51, 51, 51, 0.6);
+}
+
+/*GUIDE
+Base|Sombra
+<div class="holder sombra">sombra</div>
+<div class="holder sombra sombra--leve">sombra sombra--leve</div>
+<div class="holder sombra sombra--forte">sombra sombra--forte</div>
+*/
+.borda {
+  border: 2px solid #333333;
+}
+.borda--leve {
+  border-width: 1px;
+}
+.borda--forte {
+  border-width: 3px;
+}
+
+/*GUIDE
+Base|Borda
+<div class="holder borda">sombra</div>
+<div class="holder borda borda--leve">borda borda--leve</div>
+<div class="holder borda borda--forte">borda borda--forte</div>
+*/
 .exemplo__bloco {
   display: inline-block;
   height: 120px;
@@ -286,7 +318,7 @@ Base|Grid
   text-align: center;
 }
 
-/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3NvdXJjZS9fdGlwb2dyYWZpYS5zY3NzIiwic3R5bGUuY3NzIiwiLi4vc291cmNlL19jb3Jlcy5zY3NzIiwiLi4vc291cmNlL19ncmlkLnNjc3MiLCIuLi9zb3VyY2Uvc3R5bGUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBUSxzS0FBQTtBQUVSO0VBQ0UsMENBQUE7QUNBRjs7QURHQTtFQUNFLGVBQUE7RUFDQSxnQkFBQTtBQ0FGOztBREVBOzs7Q0FBQTtBQUtBO0VBQ0UsZUFBQTtFQUNBLGdCQUFBO0FDQUY7O0FERUE7OztDQUFBO0FBS0E7RUFDRSxlQUFBO0VBQ0EsZ0JBQUE7QUNBRjs7QURFQTs7O0NBQUE7QUFLQTtFQUNFLGVBQUE7RUFDQSxnQkFBQTtBQ0FGOztBREVBOzs7OztDQUFBO0FFckJBO0VBQ0UsY0FmVTtBRDJDWjs7QUMxQkE7RUFDRSxjQWpCVztBRDhDYjs7QUMzQkE7RUFDRSxjQWxCZ0I7QURnRGxCOztBQzVCQTtFQUNFLGNBcEJXO0FEbURiOztBQzdCQTtFQUNFLGNBdEJnQjtBRHNEbEI7O0FDN0JBO0VBQ0UseUJBL0JVO0FEK0RaOztBQzlCQTtFQUNFLHlCQWpDVztBRGtFYjs7QUMvQkE7RUFDRSx5QkFsQ2dCO0FEb0VsQjs7QUNoQ0E7RUFDRSx5QkFwQ1c7QUR1RWI7O0FDakNBO0VBQ0UseUJBdENnQjtBRDBFbEI7O0FDakNBOzs7Ozs7OztDQUFBO0FBVUE7Ozs7Ozs7O0NBQUE7QUMxREE7RUFDRSxXQUFBO0VBQ0EsY0FBQTtFQUNBLGVBQUE7RUFDQSxzQkFBQTtBRnNHRjs7QUVsR0E7RUFDRSxlQUFBO0VBQ0Esa0JBQUE7QUZxR0Y7QUVqR0U7RUFFRSxXQUFBO0VBQ0EsY0FBQTtBRmtHSjtBRWhHRTtFQUNFLFdBQUE7QUZrR0o7O0FFNUZBO0VBR0UscUJBQUE7RUFDQSxtQkFBQTtFQUNBLGVBQUE7RUFDQSxlQUFBO0VBQ0Esc0JBQUE7RUFDQSxXQUFBO0VBQ0Esa0JBQUE7R0FDQSxPQUFBO0dBQ0EsZUFBQTtFQUNBLGdCQUFBO0FGNkZGOztBRTFGQTtFQUNFLDRCQUFBO0FGNkZGOztBRTFGQTtFQUNFLDRCQUFBO0FGNkZGOztBRTFGQTtFQUNFLDRCQUFBO0FGNkZGOztBRTFGQTtFQUNFLDRCQUFBO0FGNkZGOztBRTFGQTtFQUNFLDRCQUFBO0FGNkZGOztBRTFGQTtFQUNFLDRCQUFBO0FGNkZGOztBRTFGQTtFQUNFLDRCQUFBO0FGNkZGOztBRTFGQTtFQUNFLDRCQUFBO0FGNkZGOztBRTFGQTtFQUNFLDRCQUFBO0FGNkZGOztBRTFGQTtFQUNFLDZCQUFBO0FGNkZGOztBRTFGQTtFQUNFLDZCQUFBO0FGNkZGOztBRTFGQTtFQUNFLDZCQUFBO0FGNkZGOztBRTFGQTs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Q0FBQTtBQ3JGQTtFQUVFLHFCQUFBO0VBQ0EsYUFBQTtFQUNBLFlBQUE7RUFDQSxrQkFBQTtFQUNBLFdBQUE7RUFDQSxvQkFBQTtFQUNBLGtCQUFBO0VBQ0EsbUJBQUE7QUhzTUY7O0FHbk1BO0VBRUUsWUFBQTtFQUNBLGFBQUE7RUFDQSxrQkFBQTtBSHFNRiIsImZpbGUiOiJzdHlsZS5jc3MifQ== */</style>
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3NvdXJjZS9fdGlwb2dyYWZpYS5zY3NzIiwic3R5bGUuY3NzIiwiLi4vc291cmNlL19jb3Jlcy5zY3NzIiwiLi4vc291cmNlL19ncmlkLnNjc3MiLCIuLi9zb3VyY2UvX3NvbWJyYS5zY3NzIiwiLi4vc291cmNlL19ib3JkYS5zY3NzIiwiLi4vc291cmNlL3N0eWxlLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQVEsc0tBQUE7QUFFUjtFQUNFLDBDQUFBO0FDQUY7O0FER0E7RUFDRSxlQUFBO0VBQ0EsZ0JBQUE7QUNBRjs7QURFQTs7O0NBQUE7QUFLQTtFQUNFLGVBQUE7RUFDQSxnQkFBQTtBQ0FGOztBREVBOzs7Q0FBQTtBQUtBO0VBQ0UsZUFBQTtFQUNBLGdCQUFBO0FDQUY7O0FERUE7OztDQUFBO0FBS0E7RUFDRSxlQUFBO0VBQ0EsZ0JBQUE7QUNBRjs7QURFQTs7Ozs7Q0FBQTtBRXJCQTtFQUNFLGNBZlU7QUQyQ1o7O0FDMUJBO0VBQ0UsY0FqQlc7QUQ4Q2I7O0FDM0JBO0VBQ0UsY0FsQmdCO0FEZ0RsQjs7QUM1QkE7RUFDRSxjQXBCVztBRG1EYjs7QUM3QkE7RUFDRSxjQXRCZ0I7QURzRGxCOztBQzdCQTtFQUNFLHlCQS9CVTtBRCtEWjs7QUM5QkE7RUFDRSx5QkFqQ1c7QURrRWI7O0FDL0JBO0VBQ0UseUJBbENnQjtBRG9FbEI7O0FDaENBO0VBQ0UseUJBcENXO0FEdUViOztBQ2pDQTtFQUNFLHlCQXRDZ0I7QUQwRWxCOztBQ2pDQTs7Ozs7Ozs7Q0FBQTtBQVVBOzs7Ozs7OztDQUFBO0FDMURBO0VBQ0UsV0FBQTtFQUNBLGNBQUE7RUFDQSxlQUFBO0VBQ0Esc0JBQUE7QUZzR0Y7O0FFbEdBO0VBQ0UsZUFBQTtFQUNBLGtCQUFBO0FGcUdGO0FFakdFO0VBRUUsV0FBQTtFQUNBLGNBQUE7QUZrR0o7QUVoR0U7RUFDRSxXQUFBO0FGa0dKOztBRTVGQTtFQUdFLHFCQUFBO0VBQ0EsbUJBQUE7RUFDQSxlQUFBO0VBQ0EsZUFBQTtFQUNBLHNCQUFBO0VBQ0EsV0FBQTtFQUNBLGtCQUFBO0dBQ0EsT0FBQTtHQUNBLGVBQUE7RUFDQSxnQkFBQTtBRjZGRjs7QUUxRkE7RUFDRSw0QkFBQTtBRjZGRjs7QUUxRkE7RUFDRSw0QkFBQTtBRjZGRjs7QUUxRkE7RUFDRSw0QkFBQTtBRjZGRjs7QUUxRkE7RUFDRSw0QkFBQTtBRjZGRjs7QUUxRkE7RUFDRSw0QkFBQTtBRjZGRjs7QUUxRkE7RUFDRSw0QkFBQTtBRjZGRjs7QUUxRkE7RUFDRSw0QkFBQTtBRjZGRjs7QUUxRkE7RUFDRSw0QkFBQTtBRjZGRjs7QUUxRkE7RUFDRSw0QkFBQTtBRjZGRjs7QUUxRkE7RUFDRSw2QkFBQTtBRjZGRjs7QUUxRkE7RUFDRSw2QkFBQTtBRjZGRjs7QUUxRkE7RUFDRSw2QkFBQTtBRjZGRjs7QUUxRkE7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O0NBQUE7QUN6RkE7RUFDRSxrREFBQTtBSDJNRjtBRzFNRTtFQUNFLGtEQUFBO0FINE1KO0FHMU1FO0VBQ0Usa0RBQUE7QUg0TUo7O0FHeE1BOzs7OztDQUFBO0FDVkE7RUFDRSx5QkFBQTtBSjJORjtBSTFORTtFQUNFLGlCQUFBO0FKNE5KO0FJMU5FO0VBQ0UsaUJBQUE7QUo0Tko7O0FJeE5BOzs7OztDQUFBO0FDSkE7RUFFRSxxQkFBQTtFQUNBLGFBQUE7RUFDQSxZQUFBO0VBQ0Esa0JBQUE7RUFDQSxXQUFBO0VBQ0Esb0JBQUE7RUFDQSxrQkFBQTtFQUNBLG1CQUFBO0FMb09GOztBS2pPQTtFQUVFLFlBQUE7RUFDQSxhQUFBO0VBQ0Esa0JBQUE7QUxtT0YiLCJmaWxlIjoic3R5bGUuY3NzIn0= */</style>
 </head>
 <body class="guide-book">
   <header class="gb-header">
@@ -294,11 +326,11 @@ Base|Grid
     <ul class="guide-book__header gb-menu">
       
             <li class="category-item">
-                <a class="category-item__link gb-font" href="#cores">Cores</a>
+                <a class="category-item__link gb-font" href="#base">Base</a>
             </li>
         
             <li class="category-item">
-                <a class="category-item__link gb-font" href="#base">Base</a>
+                <a class="category-item__link gb-font" href="#cores">Cores</a>
             </li>
         
             <li class="category-item">
@@ -310,6 +342,66 @@ Base|Grid
 
   <main class="guide-book__body">
     
+            <hr>
+            <section id="base" class="category-section">
+                <h2 class="gb-font gb-h2">Base</h2>
+        
+                <article class="category-section__example" id="borda">
+                    <h3 class="gb-font gb-h3">Borda</h3>
+                    <pre class="exemplo__code line-numbers">
+                        ...
+                        <code class="language-markup">
+                        <div class="holder borda">sombra</div>
+<div class="holder borda borda--leve">borda borda--leve</div>
+<div class="holder borda borda--forte">borda borda--forte</div>
+                        </code>
+                        ...
+                    </pre>
+                </article>
+            
+                <article class="category-section__example" id="grid">
+                    <h3 class="gb-font gb-h3">Grid</h3>
+                    <pre class="exemplo__code line-numbers">
+                        ...
+                        <code class="language-markup">
+                        <div class="container">
+  <div class="row">
+    <div class="col col-4">
+      <div class="holder b-primaria">col col-4</div>
+     </div>
+    <div class="col col-8">
+      <div class="holder b-primaria">col col-8</div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col col-8">
+      <div class="holder b-primaria">col col-8</div>
+     </div>
+    <div class="col col-4">
+      <div class="holder b-primaria">col col-4</div>
+    </div>
+  </div>
+</div>
+                        </code>
+                        ...
+                    </pre>
+                </article>
+            
+                <article class="category-section__example" id="sombra">
+                    <h3 class="gb-font gb-h3">Sombra</h3>
+                    <pre class="exemplo__code line-numbers">
+                        ...
+                        <code class="language-markup">
+                        <div class="holder sombra">sombra</div>
+<div class="holder sombra sombra--leve">sombra sombra--leve</div>
+<div class="holder sombra sombra--forte">sombra sombra--forte</div>
+                        </code>
+                        ...
+                    </pre>
+                </article>
+            
+            </section>
+        
             <hr>
             <section id="cores" class="category-section">
                 <h2 class="gb-font gb-h2">Cores</h2>
@@ -339,40 +431,6 @@ Base|Grid
 <div class="holder b-secundaria">b-secundaria</div>
 <br>
 <div class="holder b-promocao">b-promocao</div>
-                        </code>
-                        ...
-                    </pre>
-                </article>
-            
-            </section>
-        
-            <hr>
-            <section id="base" class="category-section">
-                <h2 class="gb-font gb-h2">Base</h2>
-        
-                <article class="category-section__example" id="grid">
-                    <h3 class="gb-font gb-h3">Grid</h3>
-                    <pre class="exemplo__code line-numbers">
-                        ...
-                        <code class="language-markup">
-                        <div class="container">
-  <div class="row">
-    <div class="col col-4">
-      <div class="holder b-primaria">col col-4</div>
-     </div>
-    <div class="col col-8">
-      <div class="holder b-primaria">col col-8</div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col col-8">
-      <div class="holder b-primaria">col col-8</div>
-     </div>
-    <div class="col col-4">
-      <div class="holder b-primaria">col col-4</div>
-    </div>
-  </div>
-</div>
                         </code>
                         ...
                     </pre>

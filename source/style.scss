@@ -1,6 +1,8 @@
 @import 'tipografia';
 @import 'cores';
 @import 'grid';
+@import 'sombra';
+@import 'borda';
 
 .exemplo__bloco {
   @extend .primary-font;
