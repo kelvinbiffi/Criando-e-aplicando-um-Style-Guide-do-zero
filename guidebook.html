@@ -67,7 +67,8 @@
       vertical-align: top;
     }
   </style>
-  <style>@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap");
+  <style>@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap");
 .primary-font, .holder, .exemplo__bloco {
   font-family: "Source Sans Pro", sans-serif;
 }
@@ -316,9 +317,173 @@ Base|Borda
   margin: 10px;
   padding: 20px;
   text-align: center;
+  vertical-align: top;
+  box-sizing: border-box;
+}
+.holder--short {
+  width: 120px;
+  display: inline-block;
 }
 
-/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3NvdXJjZS9fdGlwb2dyYWZpYS5zY3NzIiwic3R5bGUuY3NzIiwiLi4vc291cmNlL19jb3Jlcy5zY3NzIiwiLi4vc291cmNlL19ncmlkLnNjc3MiLCIuLi9zb3VyY2UvX3NvbWJyYS5zY3NzIiwiLi4vc291cmNlL19ib3JkYS5zY3NzIiwiLi4vc291cmNlL3N0eWxlLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQVEsc0tBQUE7QUFFUjtFQUNFLDBDQUFBO0FDQUY7O0FER0E7RUFDRSxlQUFBO0VBQ0EsZ0JBQUE7QUNBRjs7QURFQTs7O0NBQUE7QUFLQTtFQUNFLGVBQUE7RUFDQSxnQkFBQTtBQ0FGOztBREVBOzs7Q0FBQTtBQUtBO0VBQ0UsZUFBQTtFQUNBLGdCQUFBO0FDQUY7O0FERUE7OztDQUFBO0FBS0E7RUFDRSxlQUFBO0VBQ0EsZ0JBQUE7QUNBRjs7QURFQTs7Ozs7Q0FBQTtBRXJCQTtFQUNFLGNBZlU7QUQyQ1o7O0FDMUJBO0VBQ0UsY0FqQlc7QUQ4Q2I7O0FDM0JBO0VBQ0UsY0FsQmdCO0FEZ0RsQjs7QUM1QkE7RUFDRSxjQXBCVztBRG1EYjs7QUM3QkE7RUFDRSxjQXRCZ0I7QURzRGxCOztBQzdCQTtFQUNFLHlCQS9CVTtBRCtEWjs7QUM5QkE7RUFDRSx5QkFqQ1c7QURrRWI7O0FDL0JBO0VBQ0UseUJBbENnQjtBRG9FbEI7O0FDaENBO0VBQ0UseUJBcENXO0FEdUViOztBQ2pDQTtFQUNFLHlCQXRDZ0I7QUQwRWxCOztBQ2pDQTs7Ozs7Ozs7Q0FBQTtBQVVBOzs7Ozs7OztDQUFBO0FDMURBO0VBQ0UsV0FBQTtFQUNBLGNBQUE7RUFDQSxlQUFBO0VBQ0Esc0JBQUE7QUZzR0Y7O0FFbEdBO0VBQ0UsZUFBQTtFQUNBLGtCQUFBO0FGcUdGO0FFakdFO0VBRUUsV0FBQTtFQUNBLGNBQUE7QUZrR0o7QUVoR0U7RUFDRSxXQUFBO0FGa0dKOztBRTVGQTtFQUdFLHFCQUFBO0VBQ0EsbUJBQUE7RUFDQSxlQUFBO0VBQ0EsZUFBQTtFQUNBLHNCQUFBO0VBQ0EsV0FBQTtFQUNBLGtCQUFBO0dBQ0EsT0FBQTtHQUNBLGVBQUE7RUFDQSxnQkFBQTtBRjZGRjs7QUUxRkE7RUFDRSw0QkFBQTtBRjZGRjs7QUUxRkE7RUFDRSw0QkFBQTtBRjZGRjs7QUUxRkE7RUFDRSw0QkFBQTtBRjZGRjs7QUUxRkE7RUFDRSw0QkFBQTtBRjZGRjs7QUUxRkE7RUFDRSw0QkFBQTtBRjZGRjs7QUUxRkE7RUFDRSw0QkFBQTtBRjZGRjs7QUUxRkE7RUFDRSw0QkFBQTtBRjZGRjs7QUUxRkE7RUFDRSw0QkFBQTtBRjZGRjs7QUUxRkE7RUFDRSw0QkFBQTtBRjZGRjs7QUUxRkE7RUFDRSw2QkFBQTtBRjZGRjs7QUUxRkE7RUFDRSw2QkFBQTtBRjZGRjs7QUUxRkE7RUFDRSw2QkFBQTtBRjZGRjs7QUUxRkE7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O0NBQUE7QUN6RkE7RUFDRSxrREFBQTtBSDJNRjtBRzFNRTtFQUNFLGtEQUFBO0FINE1KO0FHMU1FO0VBQ0Usa0RBQUE7QUg0TUo7O0FHeE1BOzs7OztDQUFBO0FDVkE7RUFDRSx5QkFBQTtBSjJORjtBSTFORTtFQUNFLGlCQUFBO0FKNE5KO0FJMU5FO0VBQ0UsaUJBQUE7QUo0Tko7O0FJeE5BOzs7OztDQUFBO0FDSkE7RUFFRSxxQkFBQTtFQUNBLGFBQUE7RUFDQSxZQUFBO0VBQ0Esa0JBQUE7RUFDQSxXQUFBO0VBQ0Esb0JBQUE7RUFDQSxrQkFBQTtFQUNBLG1CQUFBO0FMb09GOztBS2pPQTtFQUVFLFlBQUE7RUFDQSxhQUFBO0VBQ0Esa0JBQUE7QUxtT0YiLCJmaWxlIjoic3R5bGUuY3NzIn0= */</style>
+.op-5 {
+  opacity: 0.05;
+}
+
+.op-20 {
+  opacity: 0.2;
+}
+
+.op-40 {
+  opacity: 0.4;
+}
+
+.op-60 {
+  opacity: 0.6;
+}
+
+.op-80 {
+  opacity: 0.8;
+}
+
+/*GUIDE
+Helpers|Opacidade
+<div class="holder holder--short b-preto op-5"></div>
+<div class="holder holder--short">op-5</div>
+<br>
+<div class="holder holder--short b-preto op-20"></div>
+<div class="holder holder--short">op-20</div>
+<br>
+<div class="holder holder--short b-preto op-40"></div>
+<div class="holder holder--short">op-40</div>
+<br>
+<div class="holder holder--short b-preto op-60"></div>
+<div class="holder holder--short">op-60</div>
+<br>
+<div class="holder holder--short b-preto op-80"></div>
+<div class="holder holder--short">op-80</div>
+*/
+.no-margin {
+  margin: 0;
+}
+
+/*GUIDE
+Helpers|no-margin
+<div class="container">
+  <div class="row">
+    <div class="col col-8">
+      <div class="holder sombra no-margin">col col-8</div>
+     </div>
+    <div class="col col-4">
+      <div class="holder sombra">col col-4</div>
+    </div>
+  </div>
+</div>
+*/
+.no-padding {
+  padding: 0;
+}
+
+/*GUIDE
+Helpers|no-padding
+<div class="container">
+  <div class="row">
+    <div class="col col-4">
+      <div class="holder sombra">col col-4</div>
+     </div>
+    <div class="col col-8">
+      <div class="holder sombra">col col-8</div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col col-8 no-padding">
+      <div class="holder sombra">col col-8</div>
+     </div>
+    <div class="col col-4">
+      <div class="holder sombra">col col-4</div>
+    </div>
+  </div>
+</div>
+*/
+.max-full-width {
+  max-width: 100%;
+}
+
+/*GUIDE
+Helpers|Largura Máxima 100%
+<img src="http://via.placeholder.com/2000x350" class="max-full-width" />
+<div class="holder hoder--short sombra">max-full-width</div>
+*/
+.full-width {
+  width: 100%;
+}
+
+/*GUIDE
+Helpers|Largura 100%
+<div class="holder full-width sombra">full-width</div>
+*/
+.half-width {
+  width: calc(100% / 2);
+}
+
+/*GUIDE
+Helpers|Largura 50%
+<div class="holder half-width sombra">half-width</div>
+*/
+.uppercase {
+  text-transform: uppercase;
+}
+
+/*GUIDE
+Helpers|Transformação de texto
+<div class="holder uppercase sombra">uppercase</div>
+*/
+.pre-line {
+  white-space: pre-line;
+}
+
+/*GUIDE
+Tipografia|Forçar quebra de linha
+<p class="primary-font paragraph pre-line">
+  pre-line
+
+  Hello, llama! soup! Is albino Is yeah! seriously, Hello! soup. I, man, my
+  heeheeheeheehee! Mmm! Ho-ho! Luigi's cow! wait. Makes Bambi! albino Way,
+  right? Mama mia... Street udon was Way, so guy... so that, He's say, Now, guy...
+  Did bathtub. guy... he's Saturday Advance your she Kong Kart Advance That's,
+  Kart tamale! Look, mean Wii 'Keep glad 'chorizo'? does! Oh. 'crabby', say, say,
+  Yeah, what is Bros. New
+
+  pre-line
+</p>
+*/
+.text-align-center {
+  text-align: center;
+}
+
+.text-align-left {
+  text-align: left;
+}
+
+.text-align-right {
+  text-align: right;
+}
+
+/*GUIDE
+Helpers|Alinhamento texto
+<div class="holder sombra text-align-center">text-align-center</div>
+<div class="holder sombra text-align-left">text-align-left</div>
+<div class="holder sombra text-align-right">text-align-right</div>
+*/
+.inline-block {
+  display: inline-block;
+}
+
+/*GUIDE
+Helpers|Display
+<div class="holder sombra inline-block">inline-block</div>
+*/
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInN0eWxlLmNzcyIsIi4uL3NvdXJjZS9fdGlwb2dyYWZpYS5zY3NzIiwiLi4vc291cmNlL19jb3Jlcy5zY3NzIiwiLi4vc291cmNlL19ncmlkLnNjc3MiLCIuLi9zb3VyY2UvX3NvbWJyYS5zY3NzIiwiLi4vc291cmNlL19ib3JkYS5zY3NzIiwiLi4vc291cmNlL3N0eWxlLnNjc3MiLCIuLi9zb3VyY2UvX2hlbHBlcnMuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxnQkFBZ0I7QUNBUixzS0FBQTtBQUVSO0VBQ0UsMENBQUE7QURDRjs7QUNFQTtFQUNFLGVBQUE7RUFDQSxnQkFBQTtBRENGOztBQ0NBOzs7Q0FBQTtBQUtBO0VBQ0UsZUFBQTtFQUNBLGdCQUFBO0FEQ0Y7O0FDQ0E7OztDQUFBO0FBS0E7RUFDRSxlQUFBO0VBQ0EsZ0JBQUE7QURDRjs7QUNDQTs7O0NBQUE7QUFLQTtFQUNFLGVBQUE7RUFDQSxnQkFBQTtBRENGOztBQ0NBOzs7OztDQUFBO0FDckJBO0VBQ0UsY0FmVTtBRjRDWjs7QUUzQkE7RUFDRSxjQWpCVztBRitDYjs7QUU1QkE7RUFDRSxjQWxCZ0I7QUZpRGxCOztBRTdCQTtFQUNFLGNBcEJXO0FGb0RiOztBRTlCQTtFQUNFLGNBdEJnQjtBRnVEbEI7O0FFOUJBO0VBQ0UseUJBL0JVO0FGZ0VaOztBRS9CQTtFQUNFLHlCQWpDVztBRm1FYjs7QUVoQ0E7RUFDRSx5QkFsQ2dCO0FGcUVsQjs7QUVqQ0E7RUFDRSx5QkFwQ1c7QUZ3RWI7O0FFbENBO0VBQ0UseUJBdENnQjtBRjJFbEI7O0FFbENBOzs7Ozs7OztDQUFBO0FBVUE7Ozs7Ozs7O0NBQUE7QUMxREE7RUFDRSxXQUFBO0VBQ0EsY0FBQTtFQUNBLGVBQUE7RUFDQSxzQkFBQTtBSHVHRjs7QUduR0E7RUFDRSxlQUFBO0VBQ0Esa0JBQUE7QUhzR0Y7QUdsR0U7RUFFRSxXQUFBO0VBQ0EsY0FBQTtBSG1HSjtBR2pHRTtFQUNFLFdBQUE7QUhtR0o7O0FHN0ZBO0VBR0UscUJBQUE7RUFDQSxtQkFBQTtFQUNBLGVBQUE7RUFDQSxlQUFBO0VBQ0Esc0JBQUE7RUFDQSxXQUFBO0VBQ0Esa0JBQUE7R0FDQSxPQUFBO0dBQ0EsZUFBQTtFQUNBLGdCQUFBO0FIOEZGOztBRzNGQTtFQUNFLDRCQUFBO0FIOEZGOztBRzNGQTtFQUNFLDRCQUFBO0FIOEZGOztBRzNGQTtFQUNFLDRCQUFBO0FIOEZGOztBRzNGQTtFQUNFLDRCQUFBO0FIOEZGOztBRzNGQTtFQUNFLDRCQUFBO0FIOEZGOztBRzNGQTtFQUNFLDRCQUFBO0FIOEZGOztBRzNGQTtFQUNFLDRCQUFBO0FIOEZGOztBRzNGQTtFQUNFLDRCQUFBO0FIOEZGOztBRzNGQTtFQUNFLDRCQUFBO0FIOEZGOztBRzNGQTtFQUNFLDZCQUFBO0FIOEZGOztBRzNGQTtFQUNFLDZCQUFBO0FIOEZGOztBRzNGQTtFQUNFLDZCQUFBO0FIOEZGOztBRzNGQTs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Q0FBQTtBQ3pGQTtFQUNFLGtEQUFBO0FKNE1GO0FJM01FO0VBQ0Usa0RBQUE7QUo2TUo7QUkzTUU7RUFDRSxrREFBQTtBSjZNSjs7QUl6TUE7Ozs7O0NBQUE7QUNWQTtFQUNFLHlCQUFBO0FMNE5GO0FLM05FO0VBQ0UsaUJBQUE7QUw2Tko7QUszTkU7RUFDRSxpQkFBQTtBTDZOSjs7QUt6TkE7Ozs7O0NBQUE7QUNKQTtFQUVFLHFCQUFBO0VBQ0EsYUFBQTtFQUNBLFlBQUE7RUFDQSxrQkFBQTtFQUNBLFdBQUE7RUFDQSxvQkFBQTtFQUNBLGtCQUFBO0VBQ0EsbUJBQUE7QU5xT0Y7O0FNbE9BO0VBRUUsWUFBQTtFQUNBLGFBQUE7RUFDQSxrQkFBQTtFQUNBLG1CQUFBO0VBQ0Esc0JBQUE7QU5vT0Y7QU1sT0U7RUFDRSxZQUFBO0VBQ0EscUJBQUE7QU5vT0o7O0FPaFFBO0VBQ0UsYUFBQTtBUG1RRjs7QU9oUUE7RUFDRSxZQUFBO0FQbVFGOztBT2hRQTtFQUNFLFlBQUE7QVBtUUY7O0FPaFFBO0VBQ0UsWUFBQTtBUG1RRjs7QU9oUUE7RUFDRSxZQUFBO0FQbVFGOztBTy9QQTs7Ozs7Ozs7Ozs7Ozs7OztDQUFBO0FBa0JBO0VBQ0UsU0FBQTtBUGlRRjs7QU85UEE7Ozs7Ozs7Ozs7OztDQUFBO0FBY0E7RUFDRSxVQUFBO0FQZ1FGOztBTzdQQTs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Q0FBQTtBQXNCQTtFQUNFLGVBQUE7QVArUEY7O0FPNVBBOzs7O0NBQUE7QUFNQTtFQUNFLFdBQUE7QVA4UEY7O0FPM1BBOzs7Q0FBQTtBQUtBO0VBQ0UscUJBQUE7QVA2UEY7O0FPMVBBOzs7Q0FBQTtBQUtBO0VBQ0UseUJBQUE7QVA0UEY7O0FPelBBOzs7Q0FBQTtBQUtBO0VBQ0UscUJBQUE7QVAyUEY7O0FPelBBOzs7Ozs7Ozs7Ozs7OztDQUFBO0FBZ0JBO0VBQ0Usa0JBQUE7QVAyUEY7O0FPelBBO0VBQ0UsZ0JBQUE7QVA0UEY7O0FPMVBBO0VBQ0UsaUJBQUE7QVA2UEY7O0FPMVBBOzs7OztDQUFBO0FBT0E7RUFDRSxxQkFBQTtBUDRQRjs7QU8xUEE7OztDQUFBIiwiZmlsZSI6InN0eWxlLmNzcyJ9 */</style>
 </head>
 <body class="guide-book">
   <header class="gb-header">
@@ -331,6 +496,10 @@ Base|Borda
         
             <li class="category-item">
                 <a class="category-item__link gb-font" href="#cores">Cores</a>
+            </li>
+        
+            <li class="category-item">
+                <a class="category-item__link gb-font" href="#helpers">Helpers</a>
             </li>
         
             <li class="category-item">
@@ -439,9 +608,176 @@ Base|Borda
             </section>
         
             <hr>
+            <section id="helpers" class="category-section">
+                <h2 class="gb-font gb-h2">Helpers</h2>
+        
+                <article class="category-section__example" id="opacidade">
+                    <h3 class="gb-font gb-h3">Opacidade</h3>
+                    <pre class="exemplo__code line-numbers">
+                        ...
+                        <code class="language-markup">
+                        <div class="holder holder--short b-preto op-5"></div>
+<div class="holder holder--short">op-5</div>
+<br>
+<div class="holder holder--short b-preto op-20"></div>
+<div class="holder holder--short">op-20</div>
+<br>
+<div class="holder holder--short b-preto op-40"></div>
+<div class="holder holder--short">op-40</div>
+<br>
+<div class="holder holder--short b-preto op-60"></div>
+<div class="holder holder--short">op-60</div>
+<br>
+<div class="holder holder--short b-preto op-80"></div>
+<div class="holder holder--short">op-80</div>
+                        </code>
+                        ...
+                    </pre>
+                </article>
+            
+                <article class="category-section__example" id="no-margin">
+                    <h3 class="gb-font gb-h3">no-margin</h3>
+                    <pre class="exemplo__code line-numbers">
+                        ...
+                        <code class="language-markup">
+                        <div class="container">
+  <div class="row">
+    <div class="col col-8">
+      <div class="holder sombra no-margin">col col-8</div>
+     </div>
+    <div class="col col-4">
+      <div class="holder sombra">col col-4</div>
+    </div>
+  </div>
+</div>
+                        </code>
+                        ...
+                    </pre>
+                </article>
+            
+                <article class="category-section__example" id="no-padding">
+                    <h3 class="gb-font gb-h3">no-padding</h3>
+                    <pre class="exemplo__code line-numbers">
+                        ...
+                        <code class="language-markup">
+                        <div class="container">
+  <div class="row">
+    <div class="col col-4">
+      <div class="holder sombra">col col-4</div>
+     </div>
+    <div class="col col-8">
+      <div class="holder sombra">col col-8</div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col col-8 no-padding">
+      <div class="holder sombra">col col-8</div>
+     </div>
+    <div class="col col-4">
+      <div class="holder sombra">col col-4</div>
+    </div>
+  </div>
+</div>
+                        </code>
+                        ...
+                    </pre>
+                </article>
+            
+                <article class="category-section__example" id="largura-maxima-100%">
+                    <h3 class="gb-font gb-h3">Largura Máxima 100%</h3>
+                    <pre class="exemplo__code line-numbers">
+                        ...
+                        <code class="language-markup">
+                        <img src="http://via.placeholder.com/2000x350" class="max-full-width" />
+<div class="holder hoder--short sombra">max-full-width</div>
+                        </code>
+                        ...
+                    </pre>
+                </article>
+            
+                <article class="category-section__example" id="largura-100%">
+                    <h3 class="gb-font gb-h3">Largura 100%</h3>
+                    <pre class="exemplo__code line-numbers">
+                        ...
+                        <code class="language-markup">
+                        <div class="holder full-width sombra">full-width</div>
+                        </code>
+                        ...
+                    </pre>
+                </article>
+            
+                <article class="category-section__example" id="largura-50%">
+                    <h3 class="gb-font gb-h3">Largura 50%</h3>
+                    <pre class="exemplo__code line-numbers">
+                        ...
+                        <code class="language-markup">
+                        <div class="holder half-width sombra">half-width</div>
+                        </code>
+                        ...
+                    </pre>
+                </article>
+            
+                <article class="category-section__example" id="transformacao-de-texto">
+                    <h3 class="gb-font gb-h3">Transformação de texto</h3>
+                    <pre class="exemplo__code line-numbers">
+                        ...
+                        <code class="language-markup">
+                        <div class="holder uppercase sombra">uppercase</div>
+                        </code>
+                        ...
+                    </pre>
+                </article>
+            
+                <article class="category-section__example" id="alinhamento-texto">
+                    <h3 class="gb-font gb-h3">Alinhamento texto</h3>
+                    <pre class="exemplo__code line-numbers">
+                        ...
+                        <code class="language-markup">
+                        <div class="holder sombra text-align-center">text-align-center</div>
+<div class="holder sombra text-align-left">text-align-left</div>
+<div class="holder sombra text-align-right">text-align-right</div>
+                        </code>
+                        ...
+                    </pre>
+                </article>
+            
+                <article class="category-section__example" id="display">
+                    <h3 class="gb-font gb-h3">Display</h3>
+                    <pre class="exemplo__code line-numbers">
+                        ...
+                        <code class="language-markup">
+                        <div class="holder sombra inline-block">inline-block</div>
+                        </code>
+                        ...
+                    </pre>
+                </article>
+            
+            </section>
+        
+            <hr>
             <section id="tipografia" class="category-section">
                 <h2 class="gb-font gb-h2">Tipografia</h2>
         
+                <article class="category-section__example" id="forcar-quebra-de-linha">
+                    <h3 class="gb-font gb-h3">Forçar quebra de linha</h3>
+                    <pre class="exemplo__code line-numbers">
+                        ...
+                        <code class="language-markup">
+                        <p class="primary-font paragraph pre-line">
+  pre-line
+  Hello, llama! soup! Is albino Is yeah! seriously, Hello! soup. I, man, my
+  heeheeheeheehee! Mmm! Ho-ho! Luigi's cow! wait. Makes Bambi! albino Way,
+  right? Mama mia... Street udon was Way, so guy... so that, He's say, Now, guy...
+  Did bathtub. guy... he's Saturday Advance your she Kong Kart Advance That's,
+  Kart tamale! Look, mean Wii 'Keep glad 'chorizo'? does! Oh. 'crabby', say, say,
+  Yeah, what is Bros. New
+  pre-line
+</p>
+                        </code>
+                        ...
+                    </pre>
+                </article>
+            
                 <article class="category-section__example" id="header-1">
                     <h3 class="gb-font gb-h3">Header 1</h3>
                     <pre class="exemplo__code line-numbers">
