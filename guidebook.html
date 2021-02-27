@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Guide Book</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel="stylesheet" href="https://kelvins.cc/out/assets/plugin/prism.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
+  <style>
+    .gb-font {
+      font-family: 'Source Sans Pro', sans-serif;
+    }
+    .gb-h1 {
+      font-size: 42px;
+      padding: 10px 0;
+    }
+    .gb-h2 {
+      font-size: 32px;
+      margin: 0 0 20px 0;
+      text-decoration: underline;
+    }
+    .gb-h2::before{
+      content: '';
+      display: block;
+      position: relative;
+      margin-top: -60px;
+      visibility: hidden;
+      height: 120px;
+    }
+    .gb-h3 {
+      font-size: 22px;
+      font-weight: 700;
+      margin: 20px 0;
+    }
+    .gb-header {
+      box-shadow: 10px 0px 8px 4px rgba(0,0,0,0.15);
+      background-color: #F2F2F2;
+      padding: 0 30px 20px 30px;
+      position: fixed;
+      left: 0; top: 0;
+      width: 100%;
+      z-index: 9;
+    }
+    .gb-header .category-item {
+      display: inline-block;
+      margin: 0 15px 0 0;
+    }
+    .gb-header .category-item__link {
+      color: #333333;
+    }
+    .guide-book {
+      background-color: #FFFFFF;
+    }
+    .guide-book__body {
+      padding: 90px 40px 40px 40px;
+    }
+    .gb-circle {
+      display: inline-block;
+      height: 120px;
+      width: 120px;
+      padding: 50px 10px;
+      margin: 5px;
+      border-radius: 100px;
+      text-align: center;
+      vertical-align: top;
+    }
+  </style>
+  <style>@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap");
+.primary-font, .holder, .exemplo__bloco {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.h1 {
+  font-size: 42px;
+  font-weight: 700;
+}
+
+/*GUIDE
+Tipografia|Header 1
+<h1 class="primary-font h1">Header 1</h1>
+*/
+.h2 {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+/*GUIDE
+Tipografia|Header 2
+<h2 class="primary-font h2">Header 2</h2>
+*/
+.h3 {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+/*GUIDE
+Tipografia|Header 3
+<h3 class="primary-font h3">Header 3</h3>
+*/
+.paragraph {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+/*GUIDE
+Tipografia|Paragrafo
+<p class="primary-font paragraph">
+  Hello, llama! soup! Is albino Is yeah! seriously, Hello! soup. I, man, my heeheeheeheehee! Mmm! Ho-ho! Luigi's cow! wait. Makes Bambi! albino Way, right? Mama mia... Street udon was Way, so guy... so that, He's say, Now, guy... Did bathtub. guy... he's Saturday Advance your she Kong Kart Advance That's, Kart tamale! Look, mean Wii 'Keep glad 'chorizo'? does! Oh. 'crabby', say, say, Yeah, what is Bros. New
+</p>
+*/
+.c-preto {
+  color: #333333;
+}
+
+.c-branco {
+  color: #FFFFFF;
+}
+
+.c-primaria {
+  color: #00434b;
+}
+
+.c-secundaria {
+  color: #f0c14b;
+}
+
+.c-promocao {
+  color: #C45500;
+}
+
+.b-preto {
+  background-color: #333333;
+}
+
+.b-branco {
+  background-color: #FFFFFF;
+}
+
+.b-primaria {
+  background-color: #00434b;
+}
+
+.b-secundaria {
+  background-color: #f0c14b;
+}
+
+.b-promocao {
+  background-color: #C45500;
+}
+
+/*GUIDE
+Cores|Texto
+
+<div class="holder c-primaria">c-primaria</div>
+<br>
+<div class="holder c-secundaria">c-secundaria</div>
+<br>
+<div class="holder c-promocao">c-promocao</div>
+*/
+/*GUIDE
+Cores|Fundo
+
+<div class="holder b-primaria">b-primaria</div>
+<br>
+<div class="holder b-secundaria">b-secundaria</div>
+<br>
+<div class="holder b-promocao">b-promocao</div>
+*/
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+
+.row {
+  margin: 0 -15px;
+  text-align: center;
+}
+.row::before, .row::after {
+  content: "";
+  display: table;
+}
+.row::after {
+  clear: both;
+}
+
+.col {
+  display: inline-block;
+  vertical-align: top;
+  min-height: 5px;
+  padding: 0 10px;
+  box-sizing: border-box;
+  width: 100%;
+  margin-right: -5px;
+  *zoom: 1;
+  *display: inline;
+  text-align: left;
+}
+
+.col-1 {
+  width: calc((100% / 12) * 1);
+}
+
+.col-2 {
+  width: calc((100% / 12) * 2);
+}
+
+.col-3 {
+  width: calc((100% / 12) * 3);
+}
+
+.col-4 {
+  width: calc((100% / 12) * 4);
+}
+
+.col-5 {
+  width: calc((100% / 12) * 5);
+}
+
+.col-6 {
+  width: calc((100% / 12) * 6);
+}
+
+.col-7 {
+  width: calc((100% / 12) * 7);
+}
+
+.col-8 {
+  width: calc((100% / 12) * 8);
+}
+
+.col-9 {
+  width: calc((100% / 12) * 9);
+}
+
+.col-10 {
+  width: calc((100% / 12) * 10);
+}
+
+.col-11 {
+  width: calc((100% / 12) * 11);
+}
+
+.col-12 {
+  width: calc((100% / 12) * 12);
+}
+
+/*GUIDE
+Base|Grid
+<div class="container">
+  <div class="row">
+    <div class="col col-4">
+      <div class="holder b-primaria">col col-4</div>
+     </div>
+    <div class="col col-8">
+      <div class="holder b-primaria">col col-8</div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col col-8">
+      <div class="holder b-primaria">col col-8</div>
+     </div>
+    <div class="col col-4">
+      <div class="holder b-primaria">col col-4</div>
+    </div>
+  </div>
+</div>
+*/
+.exemplo__bloco {
+  display: inline-block;
+  height: 120px;
+  width: 120px;
+  padding: 50px 10px;
+  margin: 5px;
+  border-radius: 100px;
+  text-align: center;
+  vertical-align: top;
+}
+
+.holder {
+  margin: 10px;
+  padding: 20px;
+  text-align: center;
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3NvdXJjZS9fdGlwb2dyYWZpYS5zY3NzIiwic3R5bGUuY3NzIiwiLi4vc291cmNlL19jb3Jlcy5zY3NzIiwiLi4vc291cmNlL19ncmlkLnNjc3MiLCIuLi9zb3VyY2Uvc3R5bGUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBUSxzS0FBQTtBQUVSO0VBQ0UsMENBQUE7QUNBRjs7QURHQTtFQUNFLGVBQUE7RUFDQSxnQkFBQTtBQ0FGOztBREVBOzs7Q0FBQTtBQUtBO0VBQ0UsZUFBQTtFQUNBLGdCQUFBO0FDQUY7O0FERUE7OztDQUFBO0FBS0E7RUFDRSxlQUFBO0VBQ0EsZ0JBQUE7QUNBRjs7QURFQTs7O0NBQUE7QUFLQTtFQUNFLGVBQUE7RUFDQSxnQkFBQTtBQ0FGOztBREVBOzs7OztDQUFBO0FFckJBO0VBQ0UsY0FmVTtBRDJDWjs7QUMxQkE7RUFDRSxjQWpCVztBRDhDYjs7QUMzQkE7RUFDRSxjQWxCZ0I7QURnRGxCOztBQzVCQTtFQUNFLGNBcEJXO0FEbURiOztBQzdCQTtFQUNFLGNBdEJnQjtBRHNEbEI7O0FDN0JBO0VBQ0UseUJBL0JVO0FEK0RaOztBQzlCQTtFQUNFLHlCQWpDVztBRGtFYjs7QUMvQkE7RUFDRSx5QkFsQ2dCO0FEb0VsQjs7QUNoQ0E7RUFDRSx5QkFwQ1c7QUR1RWI7O0FDakNBO0VBQ0UseUJBdENnQjtBRDBFbEI7O0FDakNBOzs7Ozs7OztDQUFBO0FBVUE7Ozs7Ozs7O0NBQUE7QUMxREE7RUFDRSxXQUFBO0VBQ0EsY0FBQTtFQUNBLGVBQUE7RUFDQSxzQkFBQTtBRnNHRjs7QUVsR0E7RUFDRSxlQUFBO0VBQ0Esa0JBQUE7QUZxR0Y7QUVqR0U7RUFFRSxXQUFBO0VBQ0EsY0FBQTtBRmtHSjtBRWhHRTtFQUNFLFdBQUE7QUZrR0o7O0FFNUZBO0VBR0UscUJBQUE7RUFDQSxtQkFBQTtFQUNBLGVBQUE7RUFDQSxlQUFBO0VBQ0Esc0JBQUE7RUFDQSxXQUFBO0VBQ0Esa0JBQUE7R0FDQSxPQUFBO0dBQ0EsZUFBQTtFQUNBLGdCQUFBO0FGNkZGOztBRTFGQTtFQUNFLDRCQUFBO0FGNkZGOztBRTFGQTtFQUNFLDRCQUFBO0FGNkZGOztBRTFGQTtFQUNFLDRCQUFBO0FGNkZGOztBRTFGQTtFQUNFLDRCQUFBO0FGNkZGOztBRTFGQTtFQUNFLDRCQUFBO0FGNkZGOztBRTFGQTtFQUNFLDRCQUFBO0FGNkZGOztBRTFGQTtFQUNFLDRCQUFBO0FGNkZGOztBRTFGQTtFQUNFLDRCQUFBO0FGNkZGOztBRTFGQTtFQUNFLDRCQUFBO0FGNkZGOztBRTFGQTtFQUNFLDZCQUFBO0FGNkZGOztBRTFGQTtFQUNFLDZCQUFBO0FGNkZGOztBRTFGQTtFQUNFLDZCQUFBO0FGNkZGOztBRTFGQTs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Q0FBQTtBQ3JGQTtFQUVFLHFCQUFBO0VBQ0EsYUFBQTtFQUNBLFlBQUE7RUFDQSxrQkFBQTtFQUNBLFdBQUE7RUFDQSxvQkFBQTtFQUNBLGtCQUFBO0VBQ0EsbUJBQUE7QUhzTUY7O0FHbk1BO0VBRUUsWUFBQTtFQUNBLGFBQUE7RUFDQSxrQkFBQTtBSHFNRiIsImZpbGUiOiJzdHlsZS5jc3MifQ== */</style>
+</head>
+<body class="guide-book">
+  <header class="gb-header">
+    <h1 class="gb-font gb-h1">Guide Book</h1>
+    <ul class="guide-book__header gb-menu">
+      
+            <li class="category-item">
+                <a class="category-item__link gb-font" href="#cores">Cores</a>
+            </li>
+        
+            <li class="category-item">
+                <a class="category-item__link gb-font" href="#base">Base</a>
+            </li>
+        
+            <li class="category-item">
+                <a class="category-item__link gb-font" href="#tipografia">Tipografia</a>
+            </li>
+        
+    </ul>
+  </header>
+
+  <main class="guide-book__body">
+    
+            <hr>
+            <section id="cores" class="category-section">
+                <h2 class="gb-font gb-h2">Cores</h2>
+        
+                <article class="category-section__example" id="texto">
+                    <h3 class="gb-font gb-h3">Texto</h3>
+                    <pre class="exemplo__code line-numbers">
+                        ...
+                        <code class="language-markup">
+                        <div class="holder c-primaria">c-primaria</div>
+<br>
+<div class="holder c-secundaria">c-secundaria</div>
+<br>
+<div class="holder c-promocao">c-promocao</div>
+                        </code>
+                        ...
+                    </pre>
+                </article>
+            
+                <article class="category-section__example" id="fundo">
+                    <h3 class="gb-font gb-h3">Fundo</h3>
+                    <pre class="exemplo__code line-numbers">
+                        ...
+                        <code class="language-markup">
+                        <div class="holder b-primaria">b-primaria</div>
+<br>
+<div class="holder b-secundaria">b-secundaria</div>
+<br>
+<div class="holder b-promocao">b-promocao</div>
+                        </code>
+                        ...
+                    </pre>
+                </article>
+            
+            </section>
+        
+            <hr>
+            <section id="base" class="category-section">
+                <h2 class="gb-font gb-h2">Base</h2>
+        
+                <article class="category-section__example" id="grid">
+                    <h3 class="gb-font gb-h3">Grid</h3>
+                    <pre class="exemplo__code line-numbers">
+                        ...
+                        <code class="language-markup">
+                        <div class="container">
+  <div class="row">
+    <div class="col col-4">
+      <div class="holder b-primaria">col col-4</div>
+     </div>
+    <div class="col col-8">
+      <div class="holder b-primaria">col col-8</div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col col-8">
+      <div class="holder b-primaria">col col-8</div>
+     </div>
+    <div class="col col-4">
+      <div class="holder b-primaria">col col-4</div>
+    </div>
+  </div>
+</div>
+                        </code>
+                        ...
+                    </pre>
+                </article>
+            
+            </section>
+        
+            <hr>
+            <section id="tipografia" class="category-section">
+                <h2 class="gb-font gb-h2">Tipografia</h2>
+        
+                <article class="category-section__example" id="header-1">
+                    <h3 class="gb-font gb-h3">Header 1</h3>
+                    <pre class="exemplo__code line-numbers">
+                        ...
+                        <code class="language-markup">
+                        <h1 class="primary-font h1">Header 1</h1>
+                        </code>
+                        ...
+                    </pre>
+                </article>
+            
+                <article class="category-section__example" id="header-2">
+                    <h3 class="gb-font gb-h3">Header 2</h3>
+                    <pre class="exemplo__code line-numbers">
+                        ...
+                        <code class="language-markup">
+                        <h2 class="primary-font h2">Header 2</h2>
+                        </code>
+                        ...
+                    </pre>
+                </article>
+            
+                <article class="category-section__example" id="header-3">
+                    <h3 class="gb-font gb-h3">Header 3</h3>
+                    <pre class="exemplo__code line-numbers">
+                        ...
+                        <code class="language-markup">
+                        <h3 class="primary-font h3">Header 3</h3>
+                        </code>
+                        ...
+                    </pre>
+                </article>
+            
+                <article class="category-section__example" id="paragrafo">
+                    <h3 class="gb-font gb-h3">Paragrafo</h3>
+                    <pre class="exemplo__code line-numbers">
+                        ...
+                        <code class="language-markup">
+                        <p class="primary-font paragraph">
+  Hello, llama! soup! Is albino Is yeah! seriously, Hello! soup. I, man, my heeheeheeheehee! Mmm! Ho-ho! Luigi's cow! wait. Makes Bambi! albino Way, right? Mama mia... Street udon was Way, so guy... so that, He's say, Now, guy... Did bathtub. guy... he's Saturday Advance your she Kong Kart Advance That's, Kart tamale! Look, mean Wii 'Keep glad 'chorizo'? does! Oh. 'crabby', say, say, Yeah, what is Bros. New
+</p>
+                        </code>
+                        ...
+                    </pre>
+                </article>
+            
+            </section>
+        
+  </main>
+
+  <footer class="guide-book__footer">
+    Footer
+  </footer>
+  <script src="https://kelvins.cc/out/assets/plugin/prism.js"></script>
+  <script>
+  (function () {
+    var cache = {
+      CodeExamples: document.querySelectorAll('.exemplo__code'),
+      PrismMarkupExamples: document.querySelectorAll('.language-markup'),
+    };
+
+    [].slice.call(cache.CodeExamples).forEach((example) => {
+      var codeExample = example.querySelector('code').innerHTML;
+      example.insertAdjacentHTML("BeforeBegin", `
+        ${codeExample}
+
+        <br>
+      `);
+    });
+
+    [].slice.call(cache.PrismMarkupExamples).forEach((example) => {
+      var innerExample = example.innerHTML.replace(/</g, '&lt').replace(/>/g, '&gt');
+      example.innerHTML = innerExample;
+    });
+  })();
+  </script>
+</body>
+</html>

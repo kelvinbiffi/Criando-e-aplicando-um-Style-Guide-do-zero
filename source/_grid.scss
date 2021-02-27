@@ -1,0 +1,110 @@
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+
+// Linha
+.row {
+  margin: 0 -15px;
+  text-align: center;
+
+  // Clearfix Start (Evitar elementos flutuarem em volta do elemento)
+  // Vai forçar a linhas fiarem uma em baixo da outra
+  &::before,
+  &::after {
+    content: "";
+    display: table;
+  }
+  &::after {
+    clear: both;
+  }
+  // Clearfix End
+}
+
+// Colunas
+.col {
+  // Ao usar inline-block temos controle do alinhamento vertical (vertical-align)
+  // diferentemente do float onde temos dificuldade de fazer esse controle
+  display: inline-block;
+  vertical-align: top;
+  min-height: 5px;
+  padding: 0 10px;
+  box-sizing: border-box;
+  width: 100%;
+  margin-right: -5px; // Eliminar margin automatica do inline-block
+  *zoom: 1; // Hack Internet Explorer: Significa display: inline nas versões antigas do Internet Explorer
+  *display: inline;
+  text-align: left;
+}
+
+.col-1 {
+  width: calc((100% / 12) * 1);
+}
+
+.col-2 {
+  width: calc((100% / 12) * 2);
+}
+
+.col-3 {
+  width: calc((100% / 12) * 3);
+}
+
+.col-4 {
+  width: calc((100% / 12) * 4);
+}
+
+.col-5 {
+  width: calc((100% / 12) * 5);
+}
+
+.col-6 {
+  width: calc((100% / 12) * 6);
+}
+
+.col-7 {
+  width: calc((100% / 12) * 7);
+}
+
+.col-8 {
+  width: calc((100% / 12) * 8);
+}
+
+.col-9 {
+  width: calc((100% / 12) * 9);
+}
+
+.col-10 {
+  width: calc((100% / 12) * 10);
+}
+
+.col-11 {
+  width: calc((100% / 12) * 11);
+}
+
+.col-12 {
+  width: calc((100% / 12) * 12);
+}
+
+/*GUIDE
+Base|Grid
+<div class="container">
+  <div class="row">
+    <div class="col col-4">
+      <div class="holder b-primaria">col col-4</div>
+     </div>
+    <div class="col col-8">
+      <div class="holder b-primaria">col col-8</div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col col-8">
+      <div class="holder b-primaria">col col-8</div>
+     </div>
+    <div class="col col-4">
+      <div class="holder b-primaria">col col-4</div>
+    </div>
+  </div>
+</div>
+*/

@@ -1,0 +1,67 @@
+// Nome das cores extraidas de https://chir.ag/projects/name-that-color/
+$cor-alto: #DDDDDD;
+$cor-preto: #333333;
+$cor-branco: #FFFFFF;
+
+$cor-sherpa-blue: #00434b;
+$cor-ronchi: #f0c14b;
+$cor-rose-sharon: #C45500;
+$cor-primaria: $cor-sherpa-blue;
+$cor-secundaria: $cor-ronchi;
+$cor-promocao: $cor-rose-sharon;
+
+$color-science-blue: #0066c0;
+$link-color: $color-science-blue;
+
+
+.c-preto {
+  color: $cor-preto;
+}
+.c-branco {
+  color: $cor-branco;
+}
+.c-primaria {
+  color: $cor-primaria;
+}
+.c-secundaria {
+  color: $cor-secundaria;
+}
+.c-promocao {
+  color: $cor-promocao;
+}
+
+.b-preto {
+  background-color: $cor-preto;
+}
+.b-branco {
+  background-color: $cor-branco;
+}
+.b-primaria {
+  background-color: $cor-primaria;
+}
+.b-secundaria {
+  background-color: $cor-secundaria;
+}
+.b-promocao {
+  background-color: $cor-promocao;
+}
+
+/*GUIDE
+Cores|Texto
+
+<div class="holder c-primaria">c-primaria</div>
+<br>
+<div class="holder c-secundaria">c-secundaria</div>
+<br>
+<div class="holder c-promocao">c-promocao</div>
+*/
+
+/*GUIDE
+Cores|Fundo
+
+<div class="holder b-primaria">b-primaria</div>
+<br>
+<div class="holder b-secundaria">b-secundaria</div>
+<br>
+<div class="holder b-promocao">b-promocao</div>
+*/

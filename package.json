@@ -1,0 +1,39 @@
+{
+  "name": "criando-e-aplicando-um-style-guide-do-zero",
+  "version": "1.0.0",
+  "description": "Código Completo do Curso Criando e aplicando um Style Guide do zero",
+  "scripts": {
+    "scss": "sass source/style.scss build/style.css",
+    "postcss": "postcss --use autoprefixer -o build/style.css build/style.css",
+    "guidebook": "node guideBook.js",
+    "build": "npm run scss && npm run postcss && npm run guidebook",
+    "watch": "nodemon --watch source --ext scss --exec \"npm run build\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kelvinbiffi/Criando-e-aplicando-um-Style-Guide-do-zero.git"
+  },
+  "keywords": [
+    "js",
+    "javascript",
+    "style",
+    "guide",
+    "styleguide",
+    "example",
+    "example"
+  ],
+  "author": "Kelvin biffi <kelvinbiffi@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kelvinbiffi/Criando-e-aplicando-um-Style-Guide-do-zero/issues"
+  },
+  "homepage": "https://github.com/kelvinbiffi/Criando-e-aplicando-um-Style-Guide-do-zero#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.2.4",
+    "guide-book-generator": "^1.0.1",
+    "nodemon": "^2.0.7",
+    "postcss": "^8.2.5",
+    "postcss-cli": "^8.3.1",
+    "sass": "^1.32.6"
+  }
+}
