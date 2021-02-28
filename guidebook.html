@@ -69,7 +69,7 @@
   </style>
   <style>@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap");
-.primary-font, .holder, .exemplo__bloco {
+.font-primaria, .holder, .exemplo__bloco, .link, .btn {
   font-family: "Source Sans Pro", sans-serif;
 }
 
@@ -80,7 +80,7 @@
 
 /*GUIDE
 Tipografia|Header 1
-<h1 class="primary-font h1">Header 1</h1>
+<h1 class="font-primaria h1">Header 1</h1>
 */
 .h2 {
   font-size: 28px;
@@ -89,7 +89,7 @@ Tipografia|Header 1
 
 /*GUIDE
 Tipografia|Header 2
-<h2 class="primary-font h2">Header 2</h2>
+<h2 class="font-primaria h2">Header 2</h2>
 */
 .h3 {
   font-size: 18px;
@@ -98,7 +98,7 @@ Tipografia|Header 2
 
 /*GUIDE
 Tipografia|Header 3
-<h3 class="primary-font h3">Header 3</h3>
+<h3 class="font-primaria h3">Header 3</h3>
 */
 .paragraph {
   font-size: 14px;
@@ -107,7 +107,7 @@ Tipografia|Header 3
 
 /*GUIDE
 Tipografia|Paragrafo
-<p class="primary-font paragraph">
+<p class="font-primaria paragraph">
   Hello, llama! soup! Is albino Is yeah! seriously, Hello! soup. I, man, my heeheeheeheehee! Mmm! Ho-ho! Luigi's cow! wait. Makes Bambi! albino Way, right? Mama mia... Street udon was Way, so guy... so that, He's say, Now, guy... Did bathtub. guy... he's Saturday Advance your she Kong Kart Advance That's, Kart tamale! Look, mean Wii 'Keep glad 'chorizo'? does! Oh. 'crabby', say, say, Yeah, what is Bros. New
 </p>
 */
@@ -154,20 +154,28 @@ Tipografia|Paragrafo
 /*GUIDE
 Cores|Texto
 
-<div class="holder c-primaria">c-primaria</div>
+<div class="holder sombra c-preto">c-preto</div>
 <br>
-<div class="holder c-secundaria">c-secundaria</div>
+<div class="holder sombra b-preto c-branco">c-branco</div>
 <br>
-<div class="holder c-promocao">c-promocao</div>
+<div class="holder sombra c-primaria">c-primaria</div>
+<br>
+<div class="holder sombra c-secundaria">c-secundaria</div>
+<br>
+<div class="holder sombra c-promocao">c-promocao</div>
 */
 /*GUIDE
 Cores|Fundo
 
-<div class="holder b-primaria">b-primaria</div>
+<div class="holder sombra c-branco b-preto">b-primaria</div>
 <br>
-<div class="holder b-secundaria">b-secundaria</div>
+<div class="holder sombra b-branco">b-primaria</div>
 <br>
-<div class="holder b-promocao">b-promocao</div>
+<div class="holder sombra b-primaria">b-primaria</div>
+<br>
+<div class="holder sombra b-secundaria">b-secundaria</div>
+<br>
+<div class="holder sombra b-promocao">b-promocao</div>
 */
 .container {
   width: 100%;
@@ -270,6 +278,54 @@ Base|Grid
   </div>
 </div>
 */
+.btn {
+  display: inline-block;
+  padding: 20px;
+  margin: 10px 0;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.btn--primario {
+  background-color: #00434b;
+  color: #FFFFFF;
+  border: 0;
+}
+.btn--secundario {
+  background-color: #f0c14b;
+  color: #00434b;
+  border: 0;
+}
+.btn--promocao {
+  background-color: #C45500;
+  color: #FFFFFF;
+  border: 0;
+}
+.btn--grande {
+  padding: 30px;
+  font-size: 18px;
+}
+.btn--pequeno {
+  padding: 10px;
+  font-size: 12px;
+}
+
+/*GUIDE
+Base|Botões
+<a class="sombra btn btn--primario">btn btn--primario</a>
+<a class="sombra btn btn--secundario">btn btn--secundario</a>
+<a class="sombra btn btn--promocao">btn btn--promocao</a>
+<a class="sombra btn btn--primario btn--grande">btn btn--primario btn--grande</a>
+<a class="sombra btn btn--secundario btn--pequeno">btn btn--secundario btn--pequeno</a>
+*/
+.link--primario {
+  font-size: 14px;
+  text-decoration: underline;
+}
+
+/*GUIDE
+Base|Links
+<a class="link link--primario">link link--primario</a>
+*/
 .sombra {
   box-shadow: 0px 6px 10px 2px rgba(51, 51, 51, 0.4);
 }
@@ -371,7 +427,7 @@ Helpers|no-margin
 <div class="container">
   <div class="row">
     <div class="col col-8">
-      <div class="holder sombra no-margin">col col-8</div>
+      <div class="holder sombra no-margin">col col-8 no-margin</div>
      </div>
     <div class="col col-4">
       <div class="holder sombra">col col-4</div>
@@ -396,7 +452,7 @@ Helpers|no-padding
   </div>
   <div class="row">
     <div class="col col-8 no-padding">
-      <div class="holder sombra">col col-8</div>
+      <div class="holder sombra">col col-8 no-padding</div>
      </div>
     <div class="col col-4">
       <div class="holder sombra">col col-4</div>
@@ -443,7 +499,7 @@ Helpers|Transformação de texto
 
 /*GUIDE
 Tipografia|Forçar quebra de linha
-<p class="primary-font paragraph pre-line">
+<p class="font-primaria paragraph pre-line">
   pre-line
 
   Hello, llama! soup! Is albino Is yeah! seriously, Hello! soup. I, man, my
@@ -483,7 +539,7 @@ Helpers|Display
 <div class="holder sombra inline-block">inline-block</div>
 */
 
-/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInN0eWxlLmNzcyIsIi4uL3NvdXJjZS9fdGlwb2dyYWZpYS5zY3NzIiwiLi4vc291cmNlL19jb3Jlcy5zY3NzIiwiLi4vc291cmNlL19ncmlkLnNjc3MiLCIuLi9zb3VyY2UvX3NvbWJyYS5zY3NzIiwiLi4vc291cmNlL19ib3JkYS5zY3NzIiwiLi4vc291cmNlL3N0eWxlLnNjc3MiLCIuLi9zb3VyY2UvX2hlbHBlcnMuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxnQkFBZ0I7QUNBUixzS0FBQTtBQUVSO0VBQ0UsMENBQUE7QURDRjs7QUNFQTtFQUNFLGVBQUE7RUFDQSxnQkFBQTtBRENGOztBQ0NBOzs7Q0FBQTtBQUtBO0VBQ0UsZUFBQTtFQUNBLGdCQUFBO0FEQ0Y7O0FDQ0E7OztDQUFBO0FBS0E7RUFDRSxlQUFBO0VBQ0EsZ0JBQUE7QURDRjs7QUNDQTs7O0NBQUE7QUFLQTtFQUNFLGVBQUE7RUFDQSxnQkFBQTtBRENGOztBQ0NBOzs7OztDQUFBO0FDckJBO0VBQ0UsY0FmVTtBRjRDWjs7QUUzQkE7RUFDRSxjQWpCVztBRitDYjs7QUU1QkE7RUFDRSxjQWxCZ0I7QUZpRGxCOztBRTdCQTtFQUNFLGNBcEJXO0FGb0RiOztBRTlCQTtFQUNFLGNBdEJnQjtBRnVEbEI7O0FFOUJBO0VBQ0UseUJBL0JVO0FGZ0VaOztBRS9CQTtFQUNFLHlCQWpDVztBRm1FYjs7QUVoQ0E7RUFDRSx5QkFsQ2dCO0FGcUVsQjs7QUVqQ0E7RUFDRSx5QkFwQ1c7QUZ3RWI7O0FFbENBO0VBQ0UseUJBdENnQjtBRjJFbEI7O0FFbENBOzs7Ozs7OztDQUFBO0FBVUE7Ozs7Ozs7O0NBQUE7QUMxREE7RUFDRSxXQUFBO0VBQ0EsY0FBQTtFQUNBLGVBQUE7RUFDQSxzQkFBQTtBSHVHRjs7QUduR0E7RUFDRSxlQUFBO0VBQ0Esa0JBQUE7QUhzR0Y7QUdsR0U7RUFFRSxXQUFBO0VBQ0EsY0FBQTtBSG1HSjtBR2pHRTtFQUNFLFdBQUE7QUhtR0o7O0FHN0ZBO0VBR0UscUJBQUE7RUFDQSxtQkFBQTtFQUNBLGVBQUE7RUFDQSxlQUFBO0VBQ0Esc0JBQUE7RUFDQSxXQUFBO0VBQ0Esa0JBQUE7R0FDQSxPQUFBO0dBQ0EsZUFBQTtFQUNBLGdCQUFBO0FIOEZGOztBRzNGQTtFQUNFLDRCQUFBO0FIOEZGOztBRzNGQTtFQUNFLDRCQUFBO0FIOEZGOztBRzNGQTtFQUNFLDRCQUFBO0FIOEZGOztBRzNGQTtFQUNFLDRCQUFBO0FIOEZGOztBRzNGQTtFQUNFLDRCQUFBO0FIOEZGOztBRzNGQTtFQUNFLDRCQUFBO0FIOEZGOztBRzNGQTtFQUNFLDRCQUFBO0FIOEZGOztBRzNGQTtFQUNFLDRCQUFBO0FIOEZGOztBRzNGQTtFQUNFLDRCQUFBO0FIOEZGOztBRzNGQTtFQUNFLDZCQUFBO0FIOEZGOztBRzNGQTtFQUNFLDZCQUFBO0FIOEZGOztBRzNGQTtFQUNFLDZCQUFBO0FIOEZGOztBRzNGQTs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Q0FBQTtBQ3pGQTtFQUNFLGtEQUFBO0FKNE1GO0FJM01FO0VBQ0Usa0RBQUE7QUo2TUo7QUkzTUU7RUFDRSxrREFBQTtBSjZNSjs7QUl6TUE7Ozs7O0NBQUE7QUNWQTtFQUNFLHlCQUFBO0FMNE5GO0FLM05FO0VBQ0UsaUJBQUE7QUw2Tko7QUszTkU7RUFDRSxpQkFBQTtBTDZOSjs7QUt6TkE7Ozs7O0NBQUE7QUNKQTtFQUVFLHFCQUFBO0VBQ0EsYUFBQTtFQUNBLFlBQUE7RUFDQSxrQkFBQTtFQUNBLFdBQUE7RUFDQSxvQkFBQTtFQUNBLGtCQUFBO0VBQ0EsbUJBQUE7QU5xT0Y7O0FNbE9BO0VBRUUsWUFBQTtFQUNBLGFBQUE7RUFDQSxrQkFBQTtFQUNBLG1CQUFBO0VBQ0Esc0JBQUE7QU5vT0Y7QU1sT0U7RUFDRSxZQUFBO0VBQ0EscUJBQUE7QU5vT0o7O0FPaFFBO0VBQ0UsYUFBQTtBUG1RRjs7QU9oUUE7RUFDRSxZQUFBO0FQbVFGOztBT2hRQTtFQUNFLFlBQUE7QVBtUUY7O0FPaFFBO0VBQ0UsWUFBQTtBUG1RRjs7QU9oUUE7RUFDRSxZQUFBO0FQbVFGOztBTy9QQTs7Ozs7Ozs7Ozs7Ozs7OztDQUFBO0FBa0JBO0VBQ0UsU0FBQTtBUGlRRjs7QU85UEE7Ozs7Ozs7Ozs7OztDQUFBO0FBY0E7RUFDRSxVQUFBO0FQZ1FGOztBTzdQQTs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Q0FBQTtBQXNCQTtFQUNFLGVBQUE7QVArUEY7O0FPNVBBOzs7O0NBQUE7QUFNQTtFQUNFLFdBQUE7QVA4UEY7O0FPM1BBOzs7Q0FBQTtBQUtBO0VBQ0UscUJBQUE7QVA2UEY7O0FPMVBBOzs7Q0FBQTtBQUtBO0VBQ0UseUJBQUE7QVA0UEY7O0FPelBBOzs7Q0FBQTtBQUtBO0VBQ0UscUJBQUE7QVAyUEY7O0FPelBBOzs7Ozs7Ozs7Ozs7OztDQUFBO0FBZ0JBO0VBQ0Usa0JBQUE7QVAyUEY7O0FPelBBO0VBQ0UsZ0JBQUE7QVA0UEY7O0FPMVBBO0VBQ0UsaUJBQUE7QVA2UEY7O0FPMVBBOzs7OztDQUFBO0FBT0E7RUFDRSxxQkFBQTtBUDRQRjs7QU8xUEE7OztDQUFBIiwiZmlsZSI6InN0eWxlLmNzcyJ9 */</style>
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInN0eWxlLmNzcyIsIi4uL3NvdXJjZS9fdGlwb2dyYWZpYS5zY3NzIiwiLi4vc291cmNlL19jb3Jlcy5zY3NzIiwiLi4vc291cmNlL19ncmlkLnNjc3MiLCIuLi9zb3VyY2UvX2JvdG9lcy5zY3NzIiwiLi4vc291cmNlL19saW5rcy5zY3NzIiwiLi4vc291cmNlL19zb21icmEuc2NzcyIsIi4uL3NvdXJjZS9fYm9yZGEuc2NzcyIsIi4uL3NvdXJjZS9zdHlsZS5zY3NzIiwiLi4vc291cmNlL19oZWxwZXJzLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsZ0JBQWdCO0FDQVIsc0tBQUE7QUFFUjtFQUNFLDBDQUFBO0FEQ0Y7O0FDRUE7RUFDRSxlQUFBO0VBQ0EsZ0JBQUE7QURDRjs7QUNDQTs7O0NBQUE7QUFLQTtFQUNFLGVBQUE7RUFDQSxnQkFBQTtBRENGOztBQ0NBOzs7Q0FBQTtBQUtBO0VBQ0UsZUFBQTtFQUNBLGdCQUFBO0FEQ0Y7O0FDQ0E7OztDQUFBO0FBS0E7RUFDRSxlQUFBO0VBQ0EsZ0JBQUE7QURDRjs7QUNDQTs7Ozs7Q0FBQTtBQ3JCQTtFQUNFLGNBZlU7QUY0Q1o7O0FFM0JBO0VBQ0UsY0FqQlc7QUYrQ2I7O0FFNUJBO0VBQ0UsY0FsQmdCO0FGaURsQjs7QUU3QkE7RUFDRSxjQXBCVztBRm9EYjs7QUU5QkE7RUFDRSxjQXRCZ0I7QUZ1RGxCOztBRTlCQTtFQUNFLHlCQS9CVTtBRmdFWjs7QUUvQkE7RUFDRSx5QkFqQ1c7QUZtRWI7O0FFaENBO0VBQ0UseUJBbENnQjtBRnFFbEI7O0FFakNBO0VBQ0UseUJBcENXO0FGd0ViOztBRWxDQTtFQUNFLHlCQXRDZ0I7QUYyRWxCOztBRWxDQTs7Ozs7Ozs7Ozs7O0NBQUE7QUFjQTs7Ozs7Ozs7Ozs7O0NBQUE7QUM5REE7RUFDRSxXQUFBO0VBQ0EsY0FBQTtFQUNBLGVBQUE7RUFDQSxzQkFBQTtBSCtHRjs7QUczR0E7RUFDRSxlQUFBO0VBQ0Esa0JBQUE7QUg4R0Y7QUcxR0U7RUFFRSxX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 */</style>
 </head>
 <body class="guide-book">
   <header class="gb-header">
@@ -528,6 +584,21 @@ Helpers|Display
                     </pre>
                 </article>
             
+                <article class="category-section__example" id="botoes">
+                    <h3 class="gb-font gb-h3">Botões</h3>
+                    <pre class="exemplo__code line-numbers">
+                        ...
+                        <code class="language-markup">
+                        <a class="sombra btn btn--primario">btn btn--primario</a>
+<a class="sombra btn btn--secundario">btn btn--secundario</a>
+<a class="sombra btn btn--promocao">btn btn--promocao</a>
+<a class="sombra btn btn--primario btn--grande">btn btn--primario btn--grande</a>
+<a class="sombra btn btn--secundario btn--pequeno">btn btn--secundario btn--pequeno</a>
+                        </code>
+                        ...
+                    </pre>
+                </article>
+            
                 <article class="category-section__example" id="grid">
                     <h3 class="gb-font gb-h3">Grid</h3>
                     <pre class="exemplo__code line-numbers">
@@ -551,6 +622,17 @@ Helpers|Display
     </div>
   </div>
 </div>
+                        </code>
+                        ...
+                    </pre>
+                </article>
+            
+                <article class="category-section__example" id="links">
+                    <h3 class="gb-font gb-h3">Links</h3>
+                    <pre class="exemplo__code line-numbers">
+                        ...
+                        <code class="language-markup">
+                        <a class="link link--primario">link link--primario</a>
                         </code>
                         ...
                     </pre>
@@ -580,11 +662,15 @@ Helpers|Display
                     <pre class="exemplo__code line-numbers">
                         ...
                         <code class="language-markup">
-                        <div class="holder c-primaria">c-primaria</div>
+                        <div class="holder sombra c-preto">c-preto</div>
 <br>
-<div class="holder c-secundaria">c-secundaria</div>
+<div class="holder sombra b-preto c-branco">c-branco</div>
 <br>
-<div class="holder c-promocao">c-promocao</div>
+<div class="holder sombra c-primaria">c-primaria</div>
+<br>
+<div class="holder sombra c-secundaria">c-secundaria</div>
+<br>
+<div class="holder sombra c-promocao">c-promocao</div>
                         </code>
                         ...
                     </pre>
@@ -595,11 +681,15 @@ Helpers|Display
                     <pre class="exemplo__code line-numbers">
                         ...
                         <code class="language-markup">
-                        <div class="holder b-primaria">b-primaria</div>
+                        <div class="holder sombra c-branco b-preto">b-primaria</div>
 <br>
-<div class="holder b-secundaria">b-secundaria</div>
+<div class="holder sombra b-branco">b-primaria</div>
 <br>
-<div class="holder b-promocao">b-promocao</div>
+<div class="holder sombra b-primaria">b-primaria</div>
+<br>
+<div class="holder sombra b-secundaria">b-secundaria</div>
+<br>
+<div class="holder sombra b-promocao">b-promocao</div>
                         </code>
                         ...
                     </pre>
@@ -643,7 +733,7 @@ Helpers|Display
                         <div class="container">
   <div class="row">
     <div class="col col-8">
-      <div class="holder sombra no-margin">col col-8</div>
+      <div class="holder sombra no-margin">col col-8 no-margin</div>
      </div>
     <div class="col col-4">
       <div class="holder sombra">col col-4</div>
@@ -671,7 +761,7 @@ Helpers|Display
   </div>
   <div class="row">
     <div class="col col-8 no-padding">
-      <div class="holder sombra">col col-8</div>
+      <div class="holder sombra">col col-8 no-padding</div>
      </div>
     <div class="col col-4">
       <div class="holder sombra">col col-4</div>
@@ -763,7 +853,7 @@ Helpers|Display
                     <pre class="exemplo__code line-numbers">
                         ...
                         <code class="language-markup">
-                        <p class="primary-font paragraph pre-line">
+                        <p class="font-primaria paragraph pre-line">
   pre-line
   Hello, llama! soup! Is albino Is yeah! seriously, Hello! soup. I, man, my
   heeheeheeheehee! Mmm! Ho-ho! Luigi's cow! wait. Makes Bambi! albino Way,
@@ -783,7 +873,7 @@ Helpers|Display
                     <pre class="exemplo__code line-numbers">
                         ...
                         <code class="language-markup">
-                        <h1 class="primary-font h1">Header 1</h1>
+                        <h1 class="font-primaria h1">Header 1</h1>
                         </code>
                         ...
                     </pre>
@@ -794,7 +884,7 @@ Helpers|Display
                     <pre class="exemplo__code line-numbers">
                         ...
                         <code class="language-markup">
-                        <h2 class="primary-font h2">Header 2</h2>
+                        <h2 class="font-primaria h2">Header 2</h2>
                         </code>
                         ...
                     </pre>
@@ -805,7 +895,7 @@ Helpers|Display
                     <pre class="exemplo__code line-numbers">
                         ...
                         <code class="language-markup">
-                        <h3 class="primary-font h3">Header 3</h3>
+                        <h3 class="font-primaria h3">Header 3</h3>
                         </code>
                         ...
                     </pre>
@@ -816,7 +906,7 @@ Helpers|Display
                     <pre class="exemplo__code line-numbers">
                         ...
                         <code class="language-markup">
-                        <p class="primary-font paragraph">
+                        <p class="font-primaria paragraph">
   Hello, llama! soup! Is albino Is yeah! seriously, Hello! soup. I, man, my heeheeheeheehee! Mmm! Ho-ho! Luigi's cow! wait. Makes Bambi! albino Way, right? Mama mia... Street udon was Way, so guy... so that, He's say, Now, guy... Did bathtub. guy... he's Saturday Advance your she Kong Kart Advance That's, Kart tamale! Look, mean Wii 'Keep glad 'chorizo'? does! Oh. 'crabby', say, say, Yeah, what is Bros. New
 </p>
                         </code>

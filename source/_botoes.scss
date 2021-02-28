@@ -1,0 +1,41 @@
+.btn {
+  @extend .font-primaria;
+  display: inline-block;
+  padding: 20px;
+  margin: 10px 0;
+  box-sizing: border-box;
+  font-size: 14px;
+
+  &--primario { // Primario
+    background-color: $cor-primaria;
+    color: $cor-branco;
+    border: 0;
+  }
+  &--secundario { // Primario
+    background-color: $cor-secundaria;
+    color: $cor-primaria;
+    border: 0;
+  }
+  &--promocao { // Primario
+    background-color: $cor-promocao;
+    color: $cor-branco;
+    border: 0;
+  }
+  &--grande {
+    padding: 30px;
+    font-size: 18px;
+  }
+  &--pequeno {
+    padding: 10px;
+    font-size: 12px;
+  }
+}
+
+/*GUIDE
+Base|Botões
+<a class="sombra btn btn--primario">btn btn--primario</a>
+<a class="sombra btn btn--secundario">btn btn--secundario</a>
+<a class="sombra btn btn--promocao">btn btn--promocao</a>
+<a class="sombra btn btn--primario btn--grande">btn btn--primario btn--grande</a>
+<a class="sombra btn btn--secundario btn--pequeno">btn btn--secundario btn--pequeno</a>
+*/

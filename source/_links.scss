@@ -1,0 +1,12 @@
+.link {
+  @extend .font-primaria;
+
+  &--primario {
+    font-size: 14px;
+    text-decoration: underline;
+  }
+}
+/*GUIDE
+Base|Links
+<a class="link link--primario">link link--primario</a>
+*/
