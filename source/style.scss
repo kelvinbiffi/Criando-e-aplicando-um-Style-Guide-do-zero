@@ -5,7 +5,7 @@
 @import 'borda';
 
 .exemplo__bloco {
-  @extend .primary-font;
+  @extend .font-primaria;
   display: inline-block;
   height: 120px;
   width: 120px;
@@ -17,7 +17,7 @@
 }
 
 .holder {
-  @extend .primary-font;
+  @extend .font-primaria;
   margin: 10px;
   padding: 20px;
   text-align: center;
