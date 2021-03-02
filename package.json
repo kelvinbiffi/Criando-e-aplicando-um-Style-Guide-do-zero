@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Código Completo do Curso Criando e aplicando um Style Guide do zero",
   "scripts": {
-    "scss": "sass source/style.scss build/style.css",
+    "scss": "sass source/style.scss build/style.css --style=compressed",
     "postcss": "postcss --use autoprefixer -o build/style.css build/style.css",
     "guidebook": "node guideBook.js",
     "build": "npm run scss && npm run postcss && npm run guidebook",
