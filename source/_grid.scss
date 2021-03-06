@@ -41,22 +41,48 @@
 
 @include gerar-colunas(100%);
 
+@include extra-largo {
+  @include gerar-colunas($extra-largo);
+  @include gerar-colunas($extra-largo, "xl-");
+}
+
+@include largo {
+  @include gerar-colunas($largo);
+  @include gerar-colunas($largo, "l-");
+}
+
+@include medio {
+  @include gerar-colunas($medio);
+  @include gerar-colunas($medio, "m-");
+}
+
+@include pequeno {
+  @include gerar-colunas($pequeno);
+  @include gerar-colunas($pequeno, "s-");
+}
+
+$largura-pequeno: calc(100vw - 40px);
+@include extra-pequeno {
+  @include gerar-colunas($largura-pequeno);
+  @include gerar-colunas($largura-pequeno, "xs-");
+}
+
 /*GUIDE
 Base|Grid
 <div class="container">
   <div class="row">
-    <div class="col col-4">
-      <div class="holder b-primaria">col col-4</div>
+    <div class="c-branco col col-4 m-col-6 s-col-10 xs-col-5">
+      <div class="holder b-primaria">col col-4 m-col-6 s-col-10 xs-col-5</div>
      </div>
-    <div class="col col-8">
-      <div class="holder b-primaria">col col-8</div>
+    <div class="c-branco col col-8 m-col-6 s-col-2 xs-col-7">
+      <div class="holder b-primaria">col col-8 m-col-6 s-col-2 xs-col-7</div>
     </div>
   </div>
   <div class="row">
-    <div class="col col-8">
+    <div class="c-branco col col-8">
       <div class="holder b-primaria">col col-8</div>
      </div>
-    <div class="col col-4">
+    <div class="c-branco col col-4">
       <div class="holder b-primaria">col col-4</div>
     </div>
   </div>
