@@ -33,7 +33,7 @@
   padding: 0 10px;
   box-sizing: border-box;
   width: 100%;
-  margin-right: -5px; // Eliminar margin automatica do inline-block
+  margin: 0 -5px; // Eliminar margin automatica do inline-block
   *zoom: 1; // Hack Internet Explorer: Significa display: inline nas versões antigas do Internet Explorer
   *display: inline;
   text-align: left;
