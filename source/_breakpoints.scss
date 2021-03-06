@@ -1,7 +1,7 @@
-$pequeno: 576px; // Aparelhos com tela pequena
-$medio: 768px; // Aparelhos com tela média
-$largo: 992px; // Aparelhos com tela grande
-$extra-largo: 1106px; // Aparelhos com tela muito grande
+$pequeno: 676px; // Aparelhos com tela pequena
+$medio: 868px; // Aparelhos com tela média
+$largo: 1024px; // Aparelhos com tela grande
+$extra-largo: 1306px; // Aparelhos com tela muito grande
 
 @mixin extra-largo {
   @media screen and (min-width: $extra-largo) {
