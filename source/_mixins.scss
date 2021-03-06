@@ -1,0 +1,23 @@
+@mixin gerar-colunas(
+  $largura-base: 1200px,
+  $prefixo: "",
+  $numero-colunas: 12
+) {
+  $lista: null;
+  // Um loop do número 1 até o $numero-colunas
+  @for $i from 1 through $numero-colunas {
+    $numero-coluna: $i;
+    .#{$prefixo}col-#{$numero-coluna} {
+      // Regra de 3 (A largura base dividiva pelo número de colunas vezes o número de colunas
+      width: calc((#{$largura-base} / #{$numero-colunas}) * #{$numero-coluna});
+    }
+    $lista: append(
+      $lista,
+      unquote(".#{$prefixo}col-#{$numero-coluna}"),
+      comma
+    );
+  }
+  #{$lista} {
+    // Adicionar a lista de classes gerada pelo loop
+  }
+}
