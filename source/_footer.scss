@@ -1,0 +1,70 @@
+.footer {
+  &__top {
+    background-color: darken($cor-primaria, 2%);
+    padding: 12px 0;
+  }
+  &__main {
+    padding: 32px 0;
+
+    &__lista {
+      margin: 0;
+      padding: 0;
+
+      &__item {
+        margin: 8px 0;
+      }
+    }
+  }
+  &__logo {
+    border-top: 1px solid darken($cor-primaria, 2%);
+    padding: 12px 0;
+
+    &__image {
+      width: 50px;
+    }
+  }
+}
+
+/*GUIDE
+Componente|Footer
+<footer class="footer full-width b-primaria">
+  <div class="footer__top text-align-center">
+    <h2 class="font-primaria h2 c-branco">loja</h2>
+  </div>
+  <div class="footer__main">
+    <div class="container">
+      <div class="row">
+        <div class="c-branco col col-4 s-col-12 xs-col-12">
+          <nav class="footer__menu">
+            <ul class="footer__menu__lista">
+              <li class="footer__menu__lista__item"><a href="#" class="link link--primario c-branco">Sobre nós</a></li>
+              <li class="footer__menu__lista__item"><a href="#" class="link link--primario c-branco">Empresa</a></li>
+              <li class="footer__menu__lista__item"><a href="#" class="link link--primario c-branco">Trabalhe Conosco</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="c-branco col col-4 s-col-12 xs-col-12">
+          <nav class="footer__menu">
+            <ul class="footer__menu__lista">
+              <li class="footer__menu__lista__item"><a href="#" class="link link--primario c-branco">Video Games</a></li>
+              <li class="footer__menu__lista__item"><a href="#" class="link link--primario c-branco">Comidas</a></li>
+              <li class="footer__menu__lista__item"><a href="#" class="link link--primario c-branco">Bebidas</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="c-branco col col-4 s-col-12 xs-col-12">
+          <nav class="footer__menu">
+            <ul class="footer__menu__lista">
+              <li class="footer__menu__lista__item"><a href="#" class="link link--primario c-branco">FAQ</a></li>
+              <li class="footer__menu__lista__item"><a href="#" class="link link--primario c-branco">Instagram</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer__logo text-align-center">
+    <img class="footer__logo__image" src="/public/img/logo.png" />
+  </div>
+</footer>
+*/
