@@ -10,6 +10,10 @@
       margin: 0;
       padding: 0;
 
+      @include mobile {
+        margin: 12px 0;
+      }
+
       &__item {
         margin: 8px 0;
       }
@@ -35,28 +39,28 @@ Componente|Footer
     <div class="container">
       <div class="row">
         <div class="c-branco col col-4 s-col-12 xs-col-12">
-          <nav class="footer__menu">
-            <ul class="footer__menu__lista">
-              <li class="footer__menu__lista__item"><a href="#" class="link link--primario c-branco">Sobre nós</a></li>
-              <li class="footer__menu__lista__item"><a href="#" class="link link--primario c-branco">Empresa</a></li>
-              <li class="footer__menu__lista__item"><a href="#" class="link link--primario c-branco">Trabalhe Conosco</a></li>
+          <nav class="footer__main">
+            <ul class="footer__main__lista">
+              <li class="footer__main__lista__item"><a href="#" class="link link--primario c-branco">Sobre nós</a></li>
+              <li class="footer__main__lista__item"><a href="#" class="link link--primario c-branco">Empresa</a></li>
+              <li class="footer__main__lista__item"><a href="#" class="link link--primario c-branco">Trabalhe Conosco</a></li>
             </ul>
           </nav>
         </div>
         <div class="c-branco col col-4 s-col-12 xs-col-12">
-          <nav class="footer__menu">
-            <ul class="footer__menu__lista">
-              <li class="footer__menu__lista__item"><a href="#" class="link link--primario c-branco">Video Games</a></li>
-              <li class="footer__menu__lista__item"><a href="#" class="link link--primario c-branco">Comidas</a></li>
-              <li class="footer__menu__lista__item"><a href="#" class="link link--primario c-branco">Bebidas</a></li>
+          <nav class="footer__main">
+            <ul class="footer__main__lista">
+              <li class="footer__main__lista__item"><a href="#" class="link link--primario c-branco">Video Games</a></li>
+              <li class="footer__main__lista__item"><a href="#" class="link link--primario c-branco">Comidas</a></li>
+              <li class="footer__main__lista__item"><a href="#" class="link link--primario c-branco">Bebidas</a></li>
             </ul>
           </nav>
         </div>
         <div class="c-branco col col-4 s-col-12 xs-col-12">
-          <nav class="footer__menu">
-            <ul class="footer__menu__lista">
-              <li class="footer__menu__lista__item"><a href="#" class="link link--primario c-branco">FAQ</a></li>
-              <li class="footer__menu__lista__item"><a href="#" class="link link--primario c-branco">Instagram</a></li>
+          <nav class="footer__main">
+            <ul class="footer__main__lista">
+              <li class="footer__main__lista__item"><a href="#" class="link link--primario c-branco">FAQ</a></li>
+              <li class="footer__main__lista__item"><a href="#" class="link link--primario c-branco">Instagram</a></li>
             </ul>
           </nav>
         </div>
