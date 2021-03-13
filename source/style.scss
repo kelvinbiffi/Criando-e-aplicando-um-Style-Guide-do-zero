@@ -13,6 +13,10 @@
 @import 'componentes';
 @import 'footer';
 
+.page {
+  padding: 42px 0;
+}
+
 .exemplo__bloco {
   @extend .font-primaria;
   display: inline-block;

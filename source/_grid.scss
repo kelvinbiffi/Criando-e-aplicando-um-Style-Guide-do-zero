@@ -1,8 +1,30 @@
+$largura-pequeno: calc(100vw - 40px);
+
 .container {
   width: 100%;
   margin: 0 auto;
   padding: 0 15px;
   box-sizing: border-box;
+
+  @include extra-largo {
+    width: $extra-largo;
+  }
+  
+  @include largo {
+    width: $largo;
+  }
+  
+  @include medio {
+    width: $medio;
+  }
+  
+  @include pequeno {
+    width: $pequeno;
+  }
+
+  @include extra-pequeno {
+    width: $largura-pequeno;
+  }
 }
 
 // Linha
@@ -61,7 +83,7 @@
   @include gerar-colunas($pequeno, "s-");
 }
 
-$largura-pequeno: calc(100vw - 40px);
+
 @include extra-pequeno {
   @include gerar-colunas($largura-pequeno);
   @include gerar-colunas($largura-pequeno, "xs-");

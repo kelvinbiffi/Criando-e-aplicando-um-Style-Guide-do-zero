@@ -23,15 +23,15 @@ Componente|Header
 <header class="header full-width b-branco sombra">
   <div class="container">
     <div class="row">
-      <div class="c-branco col col-2 m-col-3 s-col-4 xs-col-12">
+      <div class="c-branco col col-2 m-col-3 s-col-4 xs-col-12 text-align-left">
         <img class="header__logo" src="/public/img/logo.png" />
       </div>
-      <div class="c-branco col col-10 m-col-9 s-col-8 xs-col-12">
+      <div class="c-branco col col-10 m-col-9 s-col-8 xs-col-12 text-align-left">
         <nav class="header__menu">
-          <ul class="header__menu__lista text-align-left">
+          <ul class="header__menu__lista">
             <li class="header__menu__lista__item"><a href="#" class="link link--primario c-primaria">Video Games</a></li>
             <li class="header__menu__lista__item"><a href="#" class="link link--primario c-primaria">Livros</a></li>
-            <li class="header__menu__lista__item"><a href="#" class="link link--primario c-primaria">Bebidas</a></li>
+            <li class="header__menu__lista__item"><a href="#" class="link link--primario c-primaria">Café</a></li>
           </ul>
         </nav>
       </div>
