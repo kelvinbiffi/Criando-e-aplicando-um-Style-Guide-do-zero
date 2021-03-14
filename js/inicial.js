@@ -8,12 +8,14 @@
   function blocoProduto (produto) {
     return `
       <div class="col col-3 m-col-4 s-col-6 xs-col-12">
-        <a class="bloco-produto bloco-produto--lista">
-          <img class="max-full-width" src="${'https://kelvins.cc/curso-style-guide/' + produto.id + '.jpg'}">
-          <h3 class="font-primaria h3 c-primaria">${produto.titulo}</h3>
-          <p class="font-primaria paragraph c-primaria">${produto.titulo}</p>
+        <div class="bloco-produto bloco-produto--lista">
+          <div
+            class="bloco-produto__thumb"
+            style="background-image: url('${'https://kelvins.cc/curso-style-guide/' + produto.id + '.jpg'}');">
+          </div>
+          <h3 class="bloco-produto__titulo font-primaria h3 c-primaria">${produto.titulo}</h3>
           <a class="sombra btn btn--primario full-width text-align-center">Ver mais</a>
-        </a>
+        </div>
       </div>
     `;
   }

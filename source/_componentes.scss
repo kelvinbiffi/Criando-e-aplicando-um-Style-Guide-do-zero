@@ -6,8 +6,20 @@
   }
 
   &--lista {
-    display: inline-block;
+    display: block;
     margin-bottom: 32px;
+
+    #{$P}__thumb {
+      width: 100%;
+      height: 200px;
+      background: no-repeat center/contain;
+    }
+
+    #{$P}__titulo {
+      line-height: 24px;
+      height: 48px;
+      overflow: hidden;
+    }
   }
 
   &--detalhe {
@@ -65,11 +77,8 @@ Componente|Bloco Produto - Lista
   <div class="row">
     <div class="col col-3 m-col-4 s-col-6 xs-col-12">
       <div class="bloco-produto bloco-produto--lista">
-        <img class="max-full-width" src="http://via.placeholder.com/200" />
-        <h3 class="font-primaria h3 c-primaria">Produto 1</h3>
-        <p class="font-primaria paragraph c-primaria">
-          Descrição do produto
-        </p>
+        <div class="bloco-produto__thumb" style="background-image: url('http://via.placeholder.com/200');"></div>
+        <h3 class="bloco-produto__titulo font-primaria h3 c-primaria">Produto 1</h3>
         <a class="sombra btn btn--primario full-width text-align-center">Ver mais</a>
       </div>
     </div>
