@@ -7,23 +7,23 @@ $largura-pequeno: calc(100vw - 40px);
   box-sizing: border-box;
 
   @include extra-largo {
-    width: $extra-largo;
+    max-width: $extra-largo;
   }
   
   @include largo {
-    width: $largo;
+    max-width: $largo;
   }
   
   @include medio {
-    width: $medio;
+    max-width: $medio;
   }
   
   @include pequeno {
-    width: $pequeno;
+    max-width: $pequeno;
   }
 
   @include extra-pequeno {
-    width: $largura-pequeno;
+    max-width: $largura-pequeno;
   }
 }
 
