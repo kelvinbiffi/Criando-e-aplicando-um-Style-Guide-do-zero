@@ -1,8 +1,8 @@
-@import 'mixins';
 @import 'reset';
 @import 'breakpoints';
-@import 'tipografia';
+@import 'mixins';
 @import 'cores';
+@import 'tipografia';
 @import 'grid';
 @import 'botoes';
 @import 'links';
@@ -10,37 +10,27 @@
 @import 'borda';
 
 @import 'header';
-@import 'componentes';
 @import 'footer';
+@import 'produto-lista';
+@import 'produto-detalhe';
 
 .page {
   padding: 42px 0;
 }
 
-.exemplo__bloco {
-  @extend .font-primaria;
-  display: inline-block;
-  height: 120px;
-  width: 120px;
-  padding: 50px 10px;
-  margin: 5px;
-  border-radius: 100px;
-  text-align: center;
-  vertical-align: top;
-}
-
 .holder {
   @extend .font-primaria;
+  display: block;
   margin: 10px;
   padding: 20px;
-  text-align: center;
-  vertical-align: top;
+  text-align: certer;
   box-sizing: border-box;
 
   &--short {
-    width: 120px;
+    width: 150px;
     display: inline-block;
+    vertical-align: top;
   }
 }
 
-@import 'helpers';
+@import "helpers";

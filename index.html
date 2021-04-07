@@ -1,30 +1,33 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="utf-8" />
+    <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Papai Desenvolvedor - Página Inicial</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      media="screen"
-      href="build/style.css"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Página Inicial</title>
+    <link rel="stylesheet" type="text/css" href="/build/style.css" />
   </head>
   <body>
-    <header class="header full-width b-branco sombra">
+    <header class="header sombra">
       <div class="container">
         <div class="row">
-          <div class="c-branco col col-2 m-col-3 s-col-4 xs-col-12 text-align-left">
-            <a href="/">
-              <img class="header__logo" src="/public/img/logo.png" />
-            </a>
+          <div class="col col-2 m-col-3 s-col-4 xs-col-12">
+            <img class="header__logo" src="/public/img/loja-pan.png" />
           </div>
-          <div class="c-branco col col-10 m-col-9 s-col-8 xs-col-12">
+          <div class="col col-10 m-col-9 s-col-8 xs-col-12">
             <nav class="header__menu">
-              <ul class="header__menu__lista text-align-left">
-                <!-- Via JS -->
+              <ul class="header__menu__lista">
+                <li class="header__menu__lista__item">
+                  <a class="link link--primario c-primaria" href="plp.html?categoria=video-game"
+                    >Video Games</a
+                  >
+                </li>
+                <li class="header__menu__lista__item">
+                  <a class="link link--primario c-primaria" href="plp.html?categoria=livro">Livros</a>
+                </li>
+                <li class="header__menu__lista__item">
+                  <a class="link link--primario c-primaria" href="plp.html?categoria=cafe">Cafés</a>
+                </li>
               </ul>
             </nav>
           </div>
@@ -36,75 +39,58 @@
       <div class="container">
         <div class="row">
           <div class="col col-12">
-            <a href="/pdp.html?produto=13">
-              <img class="full-width" src="/public/img/banner.jpg" />
+            <a href="#">
+              <img class="max-full-width" src="/public/img/banner.jpg" alt="Banner Da Home" />
             </a>
           </div>
         </div>
-        <div class="row text-align-left" id="video-game">
+        <div class="row" id="video-game">
           <div class="col col-12">
-            <h2 class="font-primaria h2 text-align-left">Vídeo Games</h2>
+            <h2 class="h2 font-primaria text-align-left">
+              Vídeo Games
+            </h2>
           </div>
           <!-- Via JS -->
         </div>
-        <div class="row text-align-left" id="cafe">
+        <div class="row" id="cafe">
           <div class="col col-12">
-            <h2 class="font-primaria h2 text-align-left">Cafés</h2>
+            <h2 class="h2 font-primaria text-align-left">
+              Cafés
+            </h2>
           </div>
           <!-- Via JS -->
         </div>
-        <div class="row text-align-left" id="livro">
+        <div class="row" id="livro">
           <div class="col col-12">
-            <h2 class="font-primaria h2 text-align-left">Livro</h2>
+            <h2 class="h2 font-primaria text-align-left">
+              Livros
+            </h2>
           </div>
           <!-- Via JS -->
         </div>
       </div>
     </main>
 
-    <footer class="footer full-width b-primaria">
-      <div class="footer__top text-align-center">
-        <h2 class="font-primaria h2 c-branco">loja</h2>
+    <footer class="footer">
+      <div class="footer__top">
+        <h2 class="h2 font-primaria c-branco text-align-center">loja</h2>
       </div>
-      <div class="footer__main">
+      <div class="footer__main b-primaria">
         <div class="container">
           <div class="row">
-            <div class="c-branco col col-4 s-col-12 xs-col-12">
-              <nav class="footer__main">
-                <ul class="footer__main__lista">
+            <div class="col col-12">
+              <nav>
+                <ul class="footer__main__lista text-align-center">
                   <li class="footer__main__lista__item">
-                    <a href="#" class="link link--primario c-branco"
-                      >Sobre nós</a
+                    <a class="link link--primario c-branco" href="plp.html?categoria=video-game"
+                      >Video Games</a
                     >
                   </li>
                   <li class="footer__main__lista__item">
-                    <a href="#" class="link link--primario c-branco">Empresa</a>
+                    <a class="link link--primario c-branco" href="plp.html?categoria=livro">Livros</a>
                   </li>
                   <li class="footer__main__lista__item">
-                    <a href="#" class="link link--primario c-branco"
-                      >Trabalhe Conosco</a
-                    >
-                  </li>
-                </ul>
-              </nav>
-            </div>
-            <div class="c-branco col col-4 s-col-12 xs-col-12">
-              <nav class="footer__main">
-                <ul class="footer__main__lista lista-produtos">
-                  <!-- Via JS -->
-                </ul>
-              </nav>
-            </div>
-            <div class="c-branco col col-4 s-col-12 xs-col-12">
-              <nav class="footer__main">
-                <ul class="footer__main__lista">
-                  <li class="footer__main__lista__item">
-                    <a href="#" class="link link--primario c-branco">FAQ</a>
-                  </li>
-                  <li class="footer__main__lista__item">
-                    <a href="#" class="link link--primario c-branco"
-                      >Instagram</a
-                    >
+                    <a class="link link--primario c-branco" href="plp.html?categoria=cafe">Café</a>
                   </li>
                 </ul>
               </nav>
@@ -112,13 +98,14 @@
           </div>
         </div>
       </div>
-      <div class="footer__logo text-align-center">
-        <img class="footer__logo__image" src="/public/img/logo.png" />
+      <div class="footer__bottom text-align-center">
+        <img class="footer__bottom__image" src="/public/img/loja-pan.png" />
       </div>
     </footer>
 
-    <script src="js/main.js"></script>
-    <script src="js/home.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/home.js"></script>
+
     <script>
       main(home);
     </script>

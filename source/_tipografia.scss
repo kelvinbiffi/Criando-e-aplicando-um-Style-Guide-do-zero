@@ -7,9 +7,21 @@
 .h1 {
   font-size: 42px;
   font-weight: 700;
+  position: relative;
+
+  &::before {
+    content: '';
+    height: 3px;
+    width: 40px;
+    background-color: $cor-primaria;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
 }
 /*GUIDE
 Tipografia|Header 1
+
 <h1 class="font-primaria h1">Header 1</h1>
 */
 
@@ -19,7 +31,8 @@ Tipografia|Header 1
 }
 /*GUIDE
 Tipografia|Header 2
-<h2 class="font-primaria h2">Header 2</h2>
+
+<h1 class="font-primaria h2">Header 2</h1>
 */
 
 .h3 {
@@ -28,7 +41,8 @@ Tipografia|Header 2
 }
 /*GUIDE
 Tipografia|Header 3
-<h3 class="font-primaria h3">Header 3</h3>
+
+<h1 class="font-primaria h3">Header 3</h1>
 */
 
 .paragrafo {
@@ -37,7 +51,8 @@ Tipografia|Header 3
 }
 /*GUIDE
 Tipografia|Paragrafo
+
 <p class="font-primaria paragrafo">
-  Hello, llama! soup! Is albino Is yeah! seriously, Hello! soup. I, man, my heeheeheeheehee! Mmm! Ho-ho! Luigi's cow! wait. Makes Bambi! albino Way, right? Mama mia... Street udon was Way, so guy... so that, He's say, Now, guy... Did bathtub. guy... he's Saturday Advance your she Kong Kart Advance That's, Kart tamale! Look, mean Wii 'Keep glad 'chorizo'? does! Oh. 'crabby', say, say, Yeah, what is Bros. New
+  Yeah! at Oh. Why? Wii Oh. & Oh. that, C'est man, Mix soup. Mm-hmm! yeah! hot Wait, that's Chorizo! that! right? Strikers I, bathtub. Sonic looks guy... Chorizo! I'm Advance Oh... at bet little your udon is! Sunshine The Makes at that! Sunshine Bambi! Fortune Double soupy. at Toadstool little 'chorizo'? Mix so Hotel guy... your hibiscus! bro, does! a-a-a-a Sports seriously, 'chorizo'? it? Mmm! red! bet Oh... Makes so Mix Chorizo! Saturday Oh, man, & tamale! swingcycle!
 </p>
 */

@@ -1,19 +1,22 @@
-// Nome das cores extraidas de https://chir.ag/projects/name-that-color/
-$cor-alto: #DDDDDD;
-$cor-preto: #333333;
-$cor-branco: #FFFFFF;
-
 $cor-sherpa-blue: #00434b;
 $cor-ronchi: #f0c14b;
 $cor-rose-sharon: #C45500;
-$cor-primaria: $cor-sherpa-blue;
+$cor-science-blue: #0066c0;
+
+$cor-radical-red: #ff246b;
+
+$cor-alto: #DDDDDD;
+$cor-preto: #000000;
+$cor-branco: #FFFFFF;
+$cor-primaria: $cor-radical-red;
 $cor-secundaria: $cor-ronchi;
 $cor-promocao: $cor-rose-sharon;
+$cor-link: $cor-science-blue;
 
-$color-science-blue: #0066c0;
-$link-color: $color-science-blue;
-
-
+// CORES DE TEXTO
+.c-alto {
+  color: $cor-alto;
+}
 .c-preto {
   color: $cor-preto;
 }
@@ -29,7 +32,14 @@ $link-color: $color-science-blue;
 .c-promocao {
   color: $cor-promocao;
 }
+.c-link {
+  color: $cor-link;
+}
 
+// CORES DE FUNDO
+.b-alto {
+  background-color: $cor-alto;
+}
 .b-preto {
   background-color: $cor-preto;
 }
@@ -45,31 +55,30 @@ $link-color: $color-science-blue;
 .b-promocao {
   background-color: $cor-promocao;
 }
+.b-link {
+  background-color: $cor-link;
+}
 
 /*GUIDE
 Cores|Texto
 
-<div class="holder sombra c-preto">c-preto</div>
-<br>
-<div class="holder sombra b-preto c-branco">c-branco</div>
-<br>
-<div class="holder sombra c-primaria">c-primaria</div>
-<br>
-<div class="holder sombra c-secundaria">c-secundaria</div>
-<br>
-<div class="holder sombra c-promocao">c-promocao</div>
+<div class="holder holder--short c-alto">c-alto</div>
+<div class="holder holder--short c-preto">c-preto</div>
+<div class="holder holder--short b-preto c-branco">c-branco</div>
+<div class="holder holder--short c-primaria">c-primaria</div>
+<div class="holder holder--short c-secundaria">c-secundaria</div>
+<div class="holder holder--short c-promocao">c-promocao</div>
+<div class="holder holder--short c-link">c-link</div>
 */
 
 /*GUIDE
 Cores|Fundo
 
-<div class="holder sombra c-branco b-preto">b-primaria</div>
-<br>
-<div class="holder sombra b-branco">b-primaria</div>
-<br>
-<div class="holder sombra b-primaria">b-primaria</div>
-<br>
-<div class="holder sombra b-secundaria">b-secundaria</div>
-<br>
-<div class="holder sombra b-promocao">b-promocao</div>
+<div class="holder holder--short b-alto">b-alto</div>
+<div class="holder holder--short c-branco b-preto">b-preto</div>
+<div class="holder holder--short b-branco">b-branco</div>
+<div class="holder holder--short b-primaria">b-primaria</div>
+<div class="holder holder--short b-secundaria">b-secundaria</div>
+<div class="holder holder--short b-promocao">b-promocao</div>
+<div class="holder holder--short b-link">b-link</div>
 */

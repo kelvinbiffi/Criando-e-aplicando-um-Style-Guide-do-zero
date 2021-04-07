@@ -45,8 +45,8 @@ Helpers|Opacidade
 Helpers|no-margin
 <div class="container">
   <div class="row">
-    <div class="col col-8">
-      <div class="holder sombra no-margin">col col-8 no-margin</div>
+    <div class="col col-8 no-margin">
+      <div class="holder sombra no-margin">col col-8</div>
      </div>
     <div class="col col-4">
       <div class="holder sombra">col col-4</div>
@@ -123,16 +123,14 @@ Helpers|Transformação de texto
 }
 /*GUIDE
 Helpers|Forçar quebra de linha
-<p class="font-primaria paragrafo pre-line">
+<p class="primary-font paragraph pre-line">
   pre-line
-
   Hello, llama! soup! Is albino Is yeah! seriously, Hello! soup. I, man, my
   heeheeheeheehee! Mmm! Ho-ho! Luigi's cow! wait. Makes Bambi! albino Way,
   right? Mama mia... Street udon was Way, so guy... so that, He's say, Now, guy...
   Did bathtub. guy... he's Saturday Advance your she Kong Kart Advance That's,
   Kart tamale! Look, mean Wii 'Keep glad 'chorizo'? does! Oh. 'crabby', say, say,
   Yeah, what is Bros. New
-
   pre-line
 </p>
 */

@@ -3,6 +3,7 @@
     width: 100px;
     padding: 6px 0;
   }
+  
   &__menu {
     padding: 32px 0;
 
@@ -12,7 +13,7 @@
 
       &__item {
         display: inline-block;
-        margin: 0 12px;
+        padding: 0 12px;
       }
     }
   }
@@ -20,18 +21,24 @@
 
 /*GUIDE
 Componente|Header
-<header class="header full-width b-branco sombra">
+<header class="header sombra">
   <div class="container">
     <div class="row">
-      <div class="c-branco col col-2 m-col-3 s-col-4 xs-col-12 text-align-left">
-        <img class="header__logo" src="/public/img/logo.png" />
+      <div class="col col-2 m-col-3 s-col-4 xs-col-12">
+        <img class="header__logo" src="/public/img/loja-pan.png" />
       </div>
-      <div class="c-branco col col-10 m-col-9 s-col-8 xs-col-12 text-align-left">
+      <div class="col col-10 m-col-9 s-col-8 xs-col-12">
         <nav class="header__menu">
           <ul class="header__menu__lista">
-            <li class="header__menu__lista__item"><a href="#" class="link link--primario c-primaria">Video Games</a></li>
-            <li class="header__menu__lista__item"><a href="#" class="link link--primario c-primaria">Livros</a></li>
-            <li class="header__menu__lista__item"><a href="#" class="link link--primario c-primaria">Café</a></li>
+            <li class="header__menu__lista__item">
+              <a class="link link--primario c-primaria" href="#">Video Games</a>
+            </li>
+            <li class="header__menu__lista__item">
+              <a class="link link--primario c-primaria" href="#">Livros</a>
+            </li>
+            <li class="header__menu__lista__item">
+              <a class="link link--primario c-primaria" href="#">Café</a>
+            </li>
           </ul>
         </nav>
       </div>

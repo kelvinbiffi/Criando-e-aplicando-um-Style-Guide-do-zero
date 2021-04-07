@@ -1,0 +1,66 @@
+.produto-detalhe {
+  &__image {
+    display: inline-block;
+    width: 450px;
+    margin-right: -5px;
+    padding: 0 5px;
+    vertical-align: top;
+    box-sizing: border-box;
+
+    @include mobile {
+      width: 300px;
+      margin: 12px 0;
+    }
+
+    @include extra-pequeno {
+      width: 80%;
+    }
+  }
+
+  &__info {
+    display: inline-block;
+    width: calc(100% - 450px);
+    margin-right: -5px;
+    padding: 0 15px;
+    vertical-align: top;
+    box-sizing: border-box;
+
+    @include mobile {
+      width: calc(100% - 300px);
+    }
+
+    @include extra-pequeno {
+      width: 100%;
+
+      .btn {
+        width: 100%;
+      }
+    }
+
+    &__descricao {
+      padding: 24px 0;
+    }
+  }
+}
+
+/*GUIDE
+Componente|Produto Detalhe
+<div class="container">
+  <div class="row">
+    <div class="col col-12">
+      <div class="produto-detalhe">
+        <img class="produto-detalhe__image max-full-width" src="http://via.placeholder.com/450" />
+        <div class="produto-detalhe__info">
+          <h2 class="h2 font-primaria">Produto Detalhe</h2>
+          <p class="produto-detalhe__info__descricao font-primaria paragrafo pre-line">
+            Hotel 'Keep Oh. udon Oh! Charged is! seen? Sports Mmmmm... Is Yeah! Wait, Golf & Sunshine grass'... Kart I, cow! Mario 'chorizo'? soupy! llama! she that, wait. Hello, llama? Look no. doesn't Look, Why? Mama mia... go! she at bro, Mm-hmm! The it? Golf Sonic Mama mia... go, like bro, cow... No, seen? think, Yeah! toi That's, toi No, bro, Tour like Fortune Yeah! Golf yeah... so ever Wario?!? Double Wait, The Hi! guy... Mmmmm... you've Hello, Saturday you've C'est cow! The like
+            say, Donkey man, red! looks Yeah, cow... soup! Hotel Missing! Look, Bambi! Go, cow! The 'chorizo'? Mmmmm... was Wait, Now, little could! Mama mia... Donkey tamale! bet grumpy! 'Banano'? guy... Sonic Missing! grass'... Show! Double Show! Oh! Olympic Adventures he's Hi! so it-it-it's glad Hello, seen? Missing! Did Charged Mmm! No, wait. Kong Ho-ho! Uh-oh, Why? Hello! soupy! so toi Party udon I, Luigi's red! Mm-hmm! Hotel udon. Is know. no. Hotel you've it-it-it's cycle! mean hibiscus! Mario Cute! what so guy... 'Keep bro, wait. Wait, I'm Wario?!? Wario?!? Street swingcycle! cycle! Toadstool Toadstool heeheeheeheehee! that, llama!
+          </p>
+          <a href="#" class="sombra btn btn--primario text-align-center">Comprar</a>
+          <a href="#" class="sombra btn btn--secundario text-align-center">Adicionar a lista de desejos</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+*/

@@ -1,3 +1,41 @@
+@mixin extra-largo {
+  @media screen and (min-width: $extra-largo) {
+    @content;
+  }
+}
+@mixin largo {
+  @media screen and (min-width: $largo) and (max-width: $extra-largo) {
+    @content;
+  }
+}
+@mixin medio {
+  @media screen and (min-width: $medio) and (max-width: $largo) {
+    @content;
+  }
+}
+@mixin pequeno {
+  @media screen and (min-width: $pequeno) and (max-width: $medio) {
+    @content;
+  }
+}
+@mixin extra-pequeno {
+  @media screen and (max-width: $pequeno) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media screen and (min-width: $medio) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media screen and (max-width: $medio) {
+    @content;
+  }
+}
+
 @mixin gerar-colunas(
   $largura-base: 1200px,
   $prefixo: "",

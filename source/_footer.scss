@@ -1,5 +1,5 @@
 .footer {
-  &__top {
+  &__top, &__bottom {
     background-color: darken($cor-primaria, 2%);
     padding: 12px 0;
   }
@@ -10,19 +10,13 @@
       margin: 0;
       padding: 0;
 
-      @include mobile {
-        margin: 12px 0;
-      }
-
       &__item {
         margin: 8px 0;
       }
     }
   }
-  &__logo {
-    border-top: 1px solid darken($cor-primaria, 2%);
-    padding: 12px 0;
 
+  &__bottom {
     &__image {
       width: 50px;
     }
@@ -31,44 +25,33 @@
 
 /*GUIDE
 Componente|Footer
-<footer class="footer full-width b-primaria">
-  <div class="footer__top text-align-center">
-    <h2 class="font-primaria h2 c-branco">loja</h2>
+<footer class="footer">
+  <div class="footer__top">
+    <h2 class="h2 font-primaria c-branco text-align-center">loja</h2>
   </div>
-  <div class="footer__main">
+  <div class="footer__main b-primaria">
     <div class="container">
       <div class="row">
-        <div class="c-branco col col-4 s-col-12 xs-col-12">
-          <nav class="footer__main">
-            <ul class="footer__main__lista">
-              <li class="footer__main__lista__item"><a href="#" class="link link--primario c-branco">Sobre nós</a></li>
-              <li class="footer__main__lista__item"><a href="#" class="link link--primario c-branco">Empresa</a></li>
-              <li class="footer__main__lista__item"><a href="#" class="link link--primario c-branco">Trabalhe Conosco</a></li>
-            </ul>
-          </nav>
-        </div>
-        <div class="c-branco col col-4 s-col-12 xs-col-12">
-          <nav class="footer__main">
-            <ul class="footer__main__lista">
-              <li class="footer__main__lista__item"><a href="#" class="link link--primario c-branco">Video Games</a></li>
-              <li class="footer__main__lista__item"><a href="#" class="link link--primario c-branco">Comidas</a></li>
-              <li class="footer__main__lista__item"><a href="#" class="link link--primario c-branco">Bebidas</a></li>
-            </ul>
-          </nav>
-        </div>
-        <div class="c-branco col col-4 s-col-12 xs-col-12">
-          <nav class="footer__main">
-            <ul class="footer__main__lista">
-              <li class="footer__main__lista__item"><a href="#" class="link link--primario c-branco">FAQ</a></li>
-              <li class="footer__main__lista__item"><a href="#" class="link link--primario c-branco">Instagram</a></li>
+        <div class="col col-12">
+          <nav>
+            <ul class="footer__main__lista text-align-center">
+              <li class="footer__main__lista__item">
+                <a class="link link--primario c-branco" href="#">Video Games</a>
+              </li>
+              <li class="footer__main__lista__item">
+                <a class="link link--primario c-branco" href="#">Livros</a>
+              </li>
+              <li class="footer__main__lista__item">
+                <a class="link link--primario c-branco" href="#">Café</a>
+              </li>
             </ul>
           </nav>
         </div>
       </div>
     </div>
   </div>
-  <div class="footer__logo text-align-center">
-    <img class="footer__logo__image" src="/public/img/logo.png" />
+  <div class="footer__bottom text-align-center">
+    <img class="footer__bottom__image" src="/public/img/loja-pan.png" />
   </div>
 </footer>
 */

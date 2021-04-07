@@ -3,13 +3,13 @@ var home = function (produtos) {
     'video-game': document.querySelector('#video-game'),
     'cafe': document.querySelector('#cafe'),
     'livro': document.querySelector('#livro'),
-  };
+  }
 
-  function pupularListas () {
+  function popularListas () {
     produtos.forEach(produto => {
       cache[produto.categoria].insertAdjacentHTML('beforeEnd', blocoProduto(produto))
     });
   }
 
-  pupularListas();
+  popularListas();
 };

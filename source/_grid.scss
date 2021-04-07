@@ -1,111 +1,89 @@
+$container-width: 100%;
+$numero-colunas: 12;
 $largura-pequeno: calc(100vw - 40px);
 
 .container {
-  width: 100%;
+  width: $container-width;
   margin: 0 auto;
   padding: 0 15px;
   box-sizing: border-box;
-
-  @include extra-largo {
-    max-width: $extra-largo;
-  }
-  
-  @include largo {
-    max-width: $largo;
-  }
-  
-  @include medio {
-    max-width: $medio;
-  }
-  
-  @include pequeno {
-    max-width: $pequeno;
-  }
-
-  @include extra-pequeno {
-    max-width: $largura-pequeno;
-  }
 }
 
-// Linha
 .row {
   margin: 0 -15px;
   text-align: center;
 
-  // Clearfix Start (Evitar elementos flutuarem em volta do elemento)
-  // Vai forçar a linhas fiarem uma em baixo da outra
-  &::before,
-  &::after {
+  &::before, &::after {
     content: "";
     display: table;
   }
+
   &::after {
     clear: both;
   }
-  // Clearfix End
 }
 
-// Colunas
 .col {
-  // Ao usar inline-block temos controle do alinhamento vertical (vertical-align)
-  // diferentemente do float onde temos dificuldade de fazer esse controle
   display: inline-block;
   vertical-align: top;
   min-height: 5px;
   padding: 0 10px;
   box-sizing: border-box;
   width: 100%;
-  margin: 0 -5px; // Eliminar margin automatica do inline-block
-  *zoom: 1; // Hack Internet Explorer: Significa display: inline nas versões antigas do Internet Explorer
+  margin-right: -5px;
+  *zoom: 1;
   *display: inline;
-  text-align: center;
+  text-align: left;
 }
 
-@include gerar-colunas(100%);
+@include gerar-colunas($container-width, "", $numero-colunas);
 
 @include extra-largo {
-  @include gerar-colunas($extra-largo);
-  @include gerar-colunas($extra-largo, "xl-");
+  @include gerar-colunas($extra-largo, "", $numero-colunas);
+  @include gerar-colunas($extra-largo, "xl-", $numero-colunas);
 }
 
 @include largo {
-  @include gerar-colunas($largo);
-  @include gerar-colunas($largo, "l-");
+  @include gerar-colunas($largo, "", $numero-colunas);
+  @include gerar-colunas($largo, "l-", $numero-colunas);
 }
 
 @include medio {
-  @include gerar-colunas($medio);
-  @include gerar-colunas($medio, "m-");
+  @include gerar-colunas($medio, "", $numero-colunas);
+  @include gerar-colunas($medio, "m-", $numero-colunas);
 }
 
 @include pequeno {
-  @include gerar-colunas($pequeno);
-  @include gerar-colunas($pequeno, "s-");
+  @include gerar-colunas($pequeno, "", $numero-colunas);
+  @include gerar-colunas($pequeno, "s-", $numero-colunas);
 }
 
-
 @include extra-pequeno {
-  @include gerar-colunas($largura-pequeno);
-  @include gerar-colunas($largura-pequeno, "xs-");
+  @include gerar-colunas($largura-pequeno, "", $numero-colunas);
+  @include gerar-colunas($largura-pequeno, "xs-", $numero-colunas);
 }
 
 /*GUIDE
 Base|Grid
+
 <div class="container">
   <div class="row">
-    <div class="c-branco col col-4 m-col-6 s-col-10 xs-col-5">
-      <div class="holder b-primaria">col col-4 m-col-6 s-col-10 xs-col-5</div>
-     </div>
-    <div class="c-branco col col-8 m-col-6 s-col-2 xs-col-7">
-      <div class="holder b-primaria">col col-8 m-col-6 s-col-2 xs-col-7</div>
+    <div class="col col-4 m-col-7 xs-col-12">
+      <div class="holder b-secundaria">col col-4 m-col-7 xs-col-12</div>
+    </div>
+    <div class="col col-8 m-col-5 xs-col-12">
+      <div class="holder b-secundaria">col col-8 m-col-5 xs-col-12</div>
     </div>
   </div>
   <div class="row">
-    <div class="c-branco col col-8">
-      <div class="holder b-primaria">col col-8</div>
-     </div>
-    <div class="c-branco col col-4">
-      <div class="holder b-primaria">col col-4</div>
+    <div class="col col-3 xs-col-12">
+      <div class="holder b-secundaria">col col-3 xs-col-12</div>
+    </div>
+    <div class="col col-5 xs-col-12">
+      <div class="holder b-secundaria">col col-5 xs-col-12</div>
+    </div>
+    <div class="col col-4 xs-col-12">
+      <div class="holder b-secundaria">col col-4 xs-col-12</div>
     </div>
   </div>
 </div>
