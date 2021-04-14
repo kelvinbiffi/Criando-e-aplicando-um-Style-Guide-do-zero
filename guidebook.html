@@ -167,24 +167,17 @@
             </li>
         
             <li class="category-item">
-                <a class="category-item__link gb-font" data-anchor="cores" href="#cores">Cores</a>
-                <ul class="gb-header__gb-submenu">
-        
-                <li class="category-item">
-                    <a class="category-item__link gb-font" data-anchor="texto" href="#texto">Texto</a>
-                </li>
-            
-                <li class="category-item">
-                    <a class="category-item__link gb-font" data-anchor="fundo" href="#fundo">Fundo</a>
-                </li>
-            
-                </ul>
-            </li>
-        
-            <li class="category-item">
                 <a class="category-item__link gb-font" data-anchor="componente" href="#componente">Componente</a>
                 <ul class="gb-header__gb-submenu">
         
+                <li class="category-item">
+                    <a class="category-item__link gb-font" data-anchor="bloco-produto-lista" href="#bloco-produto-lista">Bloco Produto - Lista</a>
+                </li>
+            
+                <li class="category-item">
+                    <a class="category-item__link gb-font" data-anchor="bloco-produto-detalhe" href="#bloco-produto-detalhe">Bloco Produto - Detalhe</a>
+                </li>
+            
                 <li class="category-item">
                     <a class="category-item__link gb-font" data-anchor="footer" href="#footer">Footer</a>
                 </li>
@@ -199,6 +192,21 @@
             
                 <li class="category-item">
                     <a class="category-item__link gb-font" data-anchor="produto-lista" href="#produto-lista">Produto Lista</a>
+                </li>
+            
+                </ul>
+            </li>
+        
+            <li class="category-item">
+                <a class="category-item__link gb-font" data-anchor="cores" href="#cores">Cores</a>
+                <ul class="gb-header__gb-submenu">
+        
+                <li class="category-item">
+                    <a class="category-item__link gb-font" data-anchor="texto" href="#texto">Texto</a>
+                </li>
+            
+                <li class="category-item">
+                    <a class="category-item__link gb-font" data-anchor="fundo" href="#fundo">Fundo</a>
                 </li>
             
                 </ul>
@@ -369,49 +377,57 @@
             </section>
         
             <hr>
-            <section id="cores" class="category-section">
-                <h2 class="gb-font gb-h2">Cores</h2>
-        
-                <article class="category-section__example" id="texto">
-                    <h3 class="gb-font gb-h3">Texto</h3>
-                    <pre class="exemplo__code line-numbers">
-                        ...
-                        <code class="language-markup">
-                        <div class="holder holder--short c-alto">c-alto</div>
-<div class="holder holder--short c-preto">c-preto</div>
-<div class="holder holder--short b-preto c-branco">c-branco</div>
-<div class="holder holder--short c-primaria">c-primaria</div>
-<div class="holder holder--short c-secundaria">c-secundaria</div>
-<div class="holder holder--short c-promocao">c-promocao</div>
-<div class="holder holder--short c-link">c-link</div>
-                        </code>
-                        ...
-                    </pre>
-                </article>
-            
-                <article class="category-section__example" id="fundo">
-                    <h3 class="gb-font gb-h3">Fundo</h3>
-                    <pre class="exemplo__code line-numbers">
-                        ...
-                        <code class="language-markup">
-                        <div class="holder holder--short b-alto">b-alto</div>
-<div class="holder holder--short c-branco b-preto">b-preto</div>
-<div class="holder holder--short b-branco">b-branco</div>
-<div class="holder holder--short b-primaria">b-primaria</div>
-<div class="holder holder--short b-secundaria">b-secundaria</div>
-<div class="holder holder--short b-promocao">b-promocao</div>
-<div class="holder holder--short b-link">b-link</div>
-                        </code>
-                        ...
-                    </pre>
-                </article>
-            
-            </section>
-        
-            <hr>
             <section id="componente" class="category-section">
                 <h2 class="gb-font gb-h2">Componente</h2>
         
+                <article class="category-section__example" id="bloco-produto-lista">
+                    <h3 class="gb-font gb-h3">Bloco Produto - Lista</h3>
+                    <pre class="exemplo__code line-numbers">
+                        ...
+                        <code class="language-markup">
+                        <div class="container">
+  <div class="row">
+    <div class="col col-3 m-col-4 s-col-6 xs-col-12">
+      <div class="bloco-produto bloco-produto--lista">
+        <div class="bloco-produto__thumb" style="background-image: url('http://via.placeholder.com/200');"></div>
+        <h3 class="bloco-produto__titulo font-primaria h3 c-primaria">Produto 1</h3>
+        <a class="sombra btn btn--primario full-width text-align-center">Ver mais</a>
+      </div>
+    </div>
+  </div>
+</div>
+                        </code>
+                        ...
+                    </pre>
+                </article>
+            
+                <article class="category-section__example" id="bloco-produto-detalhe">
+                    <h3 class="gb-font gb-h3">Bloco Produto - Detalhe</h3>
+                    <pre class="exemplo__code line-numbers">
+                        ...
+                        <code class="language-markup">
+                        <div class="container">
+  <div class="row">
+    <div class="col col-12">
+      <div class="bloco-produto bloco-produto--detalhe">
+        <img class="bloco-produto__image max-full-width" src="http://via.placeholder.com/450" />
+        <div class="bloco-produto__info text-align-left">
+          <h2 class="font-primaria h2 c-primaria">Produto 1</h2>
+          <p class="bloco-produto__info__descricao font-primaria paragrafo c-primaria">
+            Descrição longa do produto para descrever com muito mais detalhes o produto como esse: Chorizo! New Hello! Hi! Oh... glad Mmm! That's, man, Super hot you've soup! yeah! could! grumpy! Dash!! Party he's Look, Street heeheeheeheehee! Mansion vs. soup. you've No, hibiscus! It's don't not Sonic Did Huh!? That's, irresponsible I, go! .......why? Super cow... Mix C'est Huh, Wii Mario was Wii Adventures 'biscus! irresponsible he's Go, Ho-ho! swingcycle! tamale! little it-it-it's Huh!? delicious glad that, it... hibiscus! Toadstool glad albino Missing! 3D doesn't glad Bros. guy... it? Go, it? 'Banano'? that! Kong Party Why? bathtub. guy... man, know. Uh-oh, that's Olympic Mmm-hmm! Mansion off that! Dash!! that! And 'Banano'? Huh, Dash!! Wario?!? swingcycle! think, CRAB! Hello! yeah!
+          </p>
+          <a class="sombra btn btn--primario text-align-center">Comprar</a>
+          <a class="sombra btn btn--secundario text-align-center">Adicionar a lista de desejos</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+                        </code>
+                        ...
+                    </pre>
+                </article>
+            
                 <article class="category-section__example" id="footer">
                     <h3 class="gb-font gb-h3">Footer</h3>
                     <pre class="exemplo__code line-numbers">
@@ -443,7 +459,7 @@
     </div>
   </div>
   <div class="footer__bottom text-align-center">
-    <img class="footer__bottom__image" src="/public/img/loja-pan.png" />
+    <img class="footer__bottom__image" src="public/img/loja-pan.png" />
   </div>
 </footer>
                         </code>
@@ -460,7 +476,7 @@
   <div class="container">
     <div class="row">
       <div class="col col-2 m-col-3 s-col-4 xs-col-12">
-        <img class="header__logo" src="/public/img/loja-pan.png" />
+        <img class="header__logo" src="public/img/loja-pan.png" />
       </div>
       <div class="col col-10 m-col-9 s-col-8 xs-col-12">
         <nav class="header__menu">
@@ -529,6 +545,46 @@
     </div>
   </div>
 </div>
+                        </code>
+                        ...
+                    </pre>
+                </article>
+            
+            </section>
+        
+            <hr>
+            <section id="cores" class="category-section">
+                <h2 class="gb-font gb-h2">Cores</h2>
+        
+                <article class="category-section__example" id="texto">
+                    <h3 class="gb-font gb-h3">Texto</h3>
+                    <pre class="exemplo__code line-numbers">
+                        ...
+                        <code class="language-markup">
+                        <div class="holder holder--short c-alto">c-alto</div>
+<div class="holder holder--short c-preto">c-preto</div>
+<div class="holder holder--short b-preto c-branco">c-branco</div>
+<div class="holder holder--short c-primaria">c-primaria</div>
+<div class="holder holder--short c-secundaria">c-secundaria</div>
+<div class="holder holder--short c-promocao">c-promocao</div>
+<div class="holder holder--short c-link">c-link</div>
+                        </code>
+                        ...
+                    </pre>
+                </article>
+            
+                <article class="category-section__example" id="fundo">
+                    <h3 class="gb-font gb-h3">Fundo</h3>
+                    <pre class="exemplo__code line-numbers">
+                        ...
+                        <code class="language-markup">
+                        <div class="holder holder--short b-alto">b-alto</div>
+<div class="holder holder--short c-branco b-preto">b-preto</div>
+<div class="holder holder--short b-branco">b-branco</div>
+<div class="holder holder--short b-primaria">b-primaria</div>
+<div class="holder holder--short b-secundaria">b-secundaria</div>
+<div class="holder holder--short b-promocao">b-promocao</div>
+<div class="holder holder--short b-link">b-link</div>
                         </code>
                         ...
                     </pre>
